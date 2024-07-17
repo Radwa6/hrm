@@ -13,8 +13,4 @@ export default {
 }
 </script>
 
-<style>
-* {
-  background-color: white;
-}
-</style>
+<style></style>
