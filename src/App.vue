@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <div class="row">
+    <div class="row NavBar">
       <NavBar />
     </div>
     <div class="row">
@@ -30,6 +30,12 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  padding: 60px;
+  font-family: Cairo;
+  background-color: #fbfdff;
+  overflow: hidden;
+}
+.NavBar {
+  background-color: #ffff;
+  padding: 30px 0;
 }
 </style>

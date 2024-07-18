@@ -44,7 +44,7 @@ export default {
 
 <style scoped>
 * {
-  background-color: #f9fcff;
+  background-color: #fbfdff;
   padding-top: 10px;
   padding-bottom: 20px;
 }

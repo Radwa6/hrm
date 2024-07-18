@@ -138,9 +138,7 @@ export default {
 <style scoped>
 .TheFooter {
   text-align: right;
-  width: 100%;
   margin-top: 20px;
-  font: Cairo;
 }
 
 .logo {

@@ -9,6 +9,7 @@
     "backend": "json-server --watch db.json --port 4000"
   },
   "dependencies": {
+    "animate.css": "^4.1.1",
     "axios": "^1.7.2",
     "bootstrap": "^4.6.2",
     "core-js": "^3.8.3",

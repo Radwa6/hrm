@@ -54,10 +54,9 @@ export default {
   text-align: center;
   justify-content: center;
   top: 17px;
-  margin-bottom: 100px;
+  margin-bottom: 40px;
   color: #605895;
   width: 100%;
-  font: Cairo;
 }
 a {
   color: #605895;
