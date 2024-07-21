@@ -3,11 +3,11 @@
     <div class="row">
       <div class="col-sm-3" style="margin-bottom: 60px">
         <img :src="imageUrl" alt="image" />
-        <p style="margin: 20px 0">
+        <p style="margin: 40px 0 20px">
           ارفع نسب الإنجاز في إدارتك الآن عبر منصتنا حيث نوفر لكم يوفر لك حلاً
           قويًا لكل ما يخص عمليـات إدارة الموارد البشرية
         </p>
-        <img :src="imageUrl1" alt="image" />
+        <img :src="imageUrl1" alt="image" style="margin-left: 10px" />
         <img :src="imageUrl2" alt="image" />
       </div>
       <div class="col-sm-3" style="margin-bottom: 60px">
@@ -75,7 +75,7 @@
               <img
                 class="XNo5Ab"
                 src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAD30lEQVR4AayShW4cMRCGLQgzHArKDK9xor5KnyDMSZmZmZmZRWWuKMy8e3y7U8/KvXG6PlR+6dM3Wtv/tElYulnzHXI918HnvQZ7PNfgGfdvz1XQEJzFtz14B++y+crCO+D2XoG97ssw475swhwuGWSOK26T3zX24luWbZbehTxe1uS+YOiuCzGwOB+3mA2yAvcFU8cO7Mrsf30R3Lz4nfMcL+eglZyNkm3QGXZhJ0snzrOw3nE61uc4zQs4wmKOxC3PaIszZA4/I2On6zSsY8ni4P9Kx6loX/WJMCCOk5G47dCZ+r79HLtxR8LfueN45F318TDEORYiW4TJHBcvbf8QhT/TJoRiJkQME2bCJvRpJnwaM8TbuX24Q/k3wS82VR0JwRwOB8nSjF5xJgRvhgxIEtEj3kngLibHcQzc1YdDetWhICSj8iD5UW8MUsX+PoBGdNzJ/qXqQHBv5f4AVHCEBX4yp1LMG26EIJ2I+2hpFn18J8OsuQi5lXv9MxV7/ZAul35HIY0k7cCduJtV7tN95bt0sNgdt5g1sjR/GrX/+E9+j8DyI35xV7eh6q/cpftY2Q5tDwfSoVxYj5jwf5Yf4qV0j+bknXtY2bbZZxxIh9KtlkERfjaD52QFcgdSvl17xkq3zP4u3TwDSAlZAZ2pgmeZgrtZ6aZpraRrGpR0kuVZFTpXv1eBu1lpx5RW3DEFFu1kmWzSM21AiehC04wWc/uUxorbpn4XtU6CiuLWKcvZ5HVPxN7ZQkZwNytqnnxW1DwBSGETWSabnPsSkjuV4G5W2DC+hwPJyCZdL/22ngLJYt7DihonfAW1Y2BRR5bJJhtvaeL9OFoJ7mZrGiC3sHb8b6vlcdswFATRL2ZCDagAX12H+3DOOWe7A8d2fFQZlsRMXpzu6z8kVnGdPcDgDbRJ5InP/nFB3lFOTMlck1TVuW8gD8wzcRO3FeQfFvfeQUbeQU5M2K0yOGBJXlVjcmaO1HFTsernecPZTd/c3ZQ0CeTM7M+S3L0MNWbpT/a94abql7ebXDrburidECiZa5LsspZUZO+kzNI2Z31r9JPsmlx7M2namzHZG7J1vaQkp6qBff09csYN3FKS6jt5w1mPA2stos8sCb/b6zFzIPMcduOG+kzORjpurUaBtRKRuRwSsz8LqnpWQuaoV8MAu9V3VF/MG9Zi2DQXAxrwUlhSENeZA7aWwyY/+bc1tkKu/hOXxkLwZswHVLlTUlINNW0mjFnswC71W+FtGLOd+9ps+7k2qw/MtEmSrlNZB+c6z5jBrPo3nZNjzXQm1FTrjgSp6dYDakr3oFd9U+9y1lO9tTZT6gAAAABJRU5ErkJggg=="
-                style="height: 1.3rem"
+                style="height: 1.6rem"
                 alt=""
                 data-csiid="s2CWZuq2Lbzsi-gPia6JwA8_10"
                 data-atf="1"
@@ -85,7 +85,7 @@
               <img
                 class="XNo5Ab"
                 src="data:image/png;base64,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"
-                style="height: 18px; width: 18px"
+                style="height: 26px; width: 26px"
                 alt=""
                 data-csiid="HmGWZrmGIMCfi-gPoeiY6AE_10"
                 data-atf="1"
@@ -96,7 +96,7 @@
               <img
                 class="XNo5Ab"
                 src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABDUlEQVR4AWP4////gOLB44D6nTcsGIo33QHi/zTGd0B2YTiAPpYjHIHNAf/piQk6wGPW8f/rLz8HYRCbXg5AWI4GQGJ0cwDY12gAJDbcHUA4CkZAIqQUK7Ts/m/SfxBMs5RupswBaACr+P47b/5zlG/5DyzZ/r/+8hNF7vuvP//nn3r0X6JhJ+0ccPrR+/+H7735jw9cf/n5v0D1Nuo5gBxQve06zR0AjoL7b7/+//zjN4bc+ScfaOeA33///k9Yfg4mDw7u/Xdeo6uhnQP6D93FMNxlxjF0ZbRzgMXEQ9iyI90cALIMJoccDXRzAK6CZog6YNQBow6gIx54Bwx4x2RAu2bAysoEZu9o7xgAQrvkxt3WZi0AAAAASUVORK5CYII="
-                style="height: 18px; width: 18px"
+                style="height: 26px; width: 26px"
                 alt=""
                 data-csiid="mmGWZtmQMJ6Ai-gPvtqVGA_10"
                 data-atf="1"
@@ -107,7 +107,7 @@
               <img
                 class="XNo5Ab"
                 src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAAAAABWESUoAAAA3ElEQVR4Ac2SGQDFMBBE1ylOcYpTner0neK0TnGpU53iFKc6xWl+p+f25D7InZ295Cv0mGjFUOzWDVVVa/WykaBiaBBFfsiyory3JASRjs8mInqxUGRw47CIBIy7Ew0Sh0nED4OXCwkNh8h7GrrgCkVK9a7w6Q2BjoVa6Oo9EZEDVJ7I1M4UeMDXzIEhvoukFxNMaP8o4gpon1l9qnqc7DcPIgpd7Ce0t/fJVO0q0qIsVeuY1XwNYK1gwm8J2GAqvHRF5mD7BcG0Rl6yegjw0BqdakE8Bni0RyjyDf4Y1Y0n0wNT4wAAAABJRU5ErkJggg=="
-                style="height: 18px; width: 18px"
+                style="height: 25px; width: 25px"
                 alt=""
                 data-csiid="cWGWZouJHZuni-gPm9S7-Ao_10"
                 data-atf="1"
@@ -137,8 +137,10 @@ export default {
 </script>
 <style scoped>
 .TheFooter {
+  font-family: Cairo;
+
   text-align: right;
-  margin-top: 20px;
+  margin-top: 40px;
 }
 
 .logo {
@@ -151,7 +153,7 @@ p {
 }
 h1 {
   color: #111c55;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   font: Cairo;
   font-weight: 700;
   size: 20.28px;
@@ -166,9 +168,11 @@ ul {
 li {
   margin-right: 20px;
   color: #111c55;
+  font-size: 18px;
+  line-height: 40px;
 }
 .social img {
   margin-top: 10px;
-  margin-left: 15px;
+  margin-left: 10px;
 }
 </style>

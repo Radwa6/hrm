@@ -12,6 +12,7 @@
     "animate.css": "^4.1.1",
     "axios": "^1.7.2",
     "bootstrap": "^4.6.2",
+    "bootstrap-vue": "^2.23.1",
     "core-js": "^3.8.3",
     "jquery": "^3.7.1",
     "json-serve": "^0.1.0",
