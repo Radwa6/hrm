@@ -1,13 +1,13 @@
 <template>
   <div id="app">
     <div class="row">
-      <NavBar v-if="!isLoginPage" />
+      <NavBar v-if="!isSpecialPage" />
     </div>
     <div class="row">
       <router-view></router-view>
     </div>
     <div class="row">
-      <TheFooter v-if="!isLoginPage" ref="searchComponent"></TheFooter>
+      <TheFooter v-if="!isSpecialPage" ref="searchComponent"></TheFooter>
     </div>
   </div>
 </template>
@@ -23,8 +23,8 @@ export default {
     TheFooter,
   },
   computed: {
-    isLoginPage() {
-      return this.$route.name === 'logIn'
+    isSpecialPage() {
+      return this.$route.name === 'logIn' || this.$route.name === 'Contact'
     },
   },
 }

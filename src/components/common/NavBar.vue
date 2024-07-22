@@ -6,19 +6,35 @@
 
     <div class="col-sm-4">
       <ul>
-        <li>الرئيسية</li>
-        <li>النظام</li>
+        <router-link to="/ThePage" active-class="active-link">
+          <li>الرئيسية</li>
+        </router-link>
+
+        <router-link to="/TeamManagement" active-class="active-link">
+          <li>النظام</li>
+        </router-link>
+
         <li>خدماتنا</li>
-        <li>المزايا</li>
-        <li>الاسعار</li>
+
+        <router-link to="/BusinessSectors" active-class="active-link">
+          <li>المزايا</li>
+        </router-link>
+
+        <router-link to="/ThePrice" active-class="active-link">
+          <li>الاسعار</li>
+        </router-link>
+
         <li>شركاء النجاح</li>
       </ul>
     </div>
     <div class="col-sm-6">
-      <button style="padding-right: 18px">تواصل معنا</button>
-      <router-link to="/logIn" style="padding-right: 18px"
-        >تسجيل الدخول</router-link
-      >
+      <router-link to="/ContactUS">
+        <button style="padding-right: 18px">تواصل معنا</button>
+      </router-link>
+
+      <router-link to="/logIn" style="padding-right: 18px">
+        تسجيل الدخول
+      </router-link>
 
       <a href="" style="padding-right: 18px">
         <svg
@@ -87,7 +103,7 @@ ul {
 }
 li {
   display: inline-block;
-  margin-right: 14px;
+  margin-right: 20px;
 }
 .logo {
   width: 50%;
@@ -99,5 +115,9 @@ li {
   width: 60%;
   height: 80%;
   z-index: -10;
+}
+
+.active-link {
+  color: #df8317;
 }
 </style>
