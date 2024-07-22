@@ -3,7 +3,7 @@
     <div class="row">
       <div class="col-sm-3" style="margin-bottom: 60px">
         <img :src="imageUrl" alt="image" />
-        <p style="margin: 40px 0 20px">
+        <p style="margin: 40px 0">
           ارفع نسب الإنجاز في إدارتك الآن عبر منصتنا حيث نوفر لكم يوفر لك حلاً
           قويًا لكل ما يخص عمليـات إدارة الموارد البشرية
         </p>
@@ -117,6 +117,7 @@
         </ul>
       </div>
     </div>
+
     <p style="color: #0a142f; text-align: center">
       Hash Studio inc 2024 جميع الحقوق محفوظة لدي©
     </p>
@@ -141,6 +142,8 @@ export default {
 
   text-align: right;
   margin-top: 40px;
+  padding: 20px 80px 20px 0;
+  width: 100%;
 }
 
 .logo {
@@ -155,8 +158,8 @@ h1 {
   color: #111c55;
   margin-bottom: 30px;
   font: Cairo;
-  font-weight: 700;
-  size: 20.28px;
+  font-weight: bold;
+  font-size: 26px;
 }
 ul {
   list-style: none;

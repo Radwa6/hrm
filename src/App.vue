@@ -1,13 +1,13 @@
 <template>
   <div id="app">
-    <div class="row NavBar">
-      <NavBar />
+    <div class="row">
+      <NavBar v-if="!isLoginPage" />
     </div>
     <div class="row">
       <router-view></router-view>
     </div>
     <div class="row">
-      <TheFooter ref="searchComponent"></TheFooter>
+      <TheFooter v-if="!isLoginPage" ref="searchComponent"></TheFooter>
     </div>
   </div>
 </template>
@@ -21,6 +21,11 @@ export default {
   components: {
     NavBar,
     TheFooter,
+  },
+  computed: {
+    isLoginPage() {
+      return this.$route.name === 'logIn'
+    },
   },
 }
 </script>

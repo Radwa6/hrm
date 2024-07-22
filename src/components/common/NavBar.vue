@@ -16,7 +16,10 @@
     </div>
     <div class="col-sm-6">
       <button style="padding-right: 18px">تواصل معنا</button>
-      <a href="" style="padding-right: 18px"> تسجيل الدخول</a>
+      <router-link to="/logIn" style="padding-right: 18px"
+        >تسجيل الدخول</router-link
+      >
+
       <a href="" style="padding-right: 18px">
         <svg
           width="35"
@@ -34,6 +37,10 @@
         English
       </a>
     </div>
+
+    <div class="container">
+      <img :src="imageUrl1" alt="image" class="overlay-img" />
+    </div>
   </div>
 </template>
 
@@ -43,6 +50,7 @@ export default {
   data() {
     return {
       imageUrl: require('@/assets/WhatsApp_Image_2024-05-12_at_3.29 2.png'),
+      imageUrl1: require('@/assets/Eclipse.png'),
     }
   },
 }
@@ -54,7 +62,6 @@ export default {
   text-align: center;
   justify-content: center;
   top: 17px;
-  margin-bottom: 40px;
   color: #605895;
   width: 100%;
 }
@@ -84,5 +91,13 @@ li {
 }
 .logo {
   width: 50%;
+}
+.overlay-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60%;
+  height: 80%;
+  z-index: -10;
 }
 </style>
