@@ -763,7 +763,7 @@ export default {
 .header {
   padding: 60px 10% 0;
   background-color: #ffff;
-  height: 10%;
+  height: 9%;
 }
 .header h1 {
   background-color: white;

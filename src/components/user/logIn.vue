@@ -45,7 +45,9 @@
         </div>
         <div class="col-sm-4"></div>
         <div class="col-sm-4 logo">
-          <img :src="imageUrl0" alt="image" />
+          <router-link to="/ThePage">
+            <img :src="imageUrl0" alt="image" />
+          </router-link>
         </div>
       </div>
       <div class="row" style="text-align: right; margin-right: 20%">
@@ -76,7 +78,7 @@
                 placeholder="أدخل كلمة المرور"
                 required
               />
-              <span @click="togglePasswordVisibility">
+              <span @click="togglePasswordVisibility" style="width: 5%">
                 <svg
                   v-if="showPassword"
                   xmlns="http://www.w3.org/2000/svg"
@@ -231,17 +233,24 @@ button {
 }
 .password-container {
   align-items: center;
+  position: relative;
+  width: 100%;
 }
 
 .password-container span {
   position: absolute;
-  right: 0;
-  top: 46%;
-  transform: translateY(-44%);
-  transform: translatex(-17%);
+
   cursor: pointer;
 }
-
+.password-container span svg {
+  overflow: hidden;
+  width: 50%;
+  position: absolute;
+  margin-top: 62%;
+  right: -38px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
 .form-check {
   display: flex;
   justify-content: space-between;

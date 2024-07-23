@@ -2,10 +2,13 @@
   <div class="ThePrice row" dir="rtl">
     <h1>على استعداد للبدء معنا</h1>
     <p>احصل على افضل العروض</p>
-    <div class="col-sm-4">
+    <div
+      class="col-sm-4 animate__animated animate__fadeInDown"
+      data-il8n="task"
+    >
       <div class="data">
         <h2>الباقة الاساسية</h2>
-        <hr />
+        <hr style="border-color: lavender; border-style: solid" />
         <h3>200 (ريال \ شهريًا)</h3>
         <h3>20-10 موظف</h3>
         <span>
@@ -86,8 +89,8 @@
         <button>اشتراك الان</button>
       </div>
     </div>
-    <div class="col-sm-4">
-      <div class="data blue">
+    <div class="col-sm-4 animate__animated animate__fadeInUp" data-il8n="task">
+      <div class="data">
         <h2>الباقة المتقدمة</h2>
         <hr style="border-color: lavender; border-style: solid" />
         <h3>600 (ريال \ شهريًا)</h3>
@@ -170,10 +173,13 @@
         <button>اشتراك الان</button>
       </div>
     </div>
-    <div class="col-sm-4">
+    <div
+      class="col-sm-4 animate__animated animate__fadeInDown"
+      data-il8n="task"
+    >
       <div class="data">
         <h2>الباقة الشاملة</h2>
-        <hr />
+        <hr style="border-color: lavender; border-style: solid" />
         <h3>400 (ريال \ شهريًا)</h3>
         <h3>50-30 موظف</h3>
         <span>
@@ -268,13 +274,13 @@ export default {
   width: 100%;
 }
 .ThePrice {
-  background-color: #ffff;
   padding: 60px 160px;
   display: flex;
   justify-content: space-between;
 }
 
 .data {
+  background-color: #ffff;
   margin-top: 40px;
   padding: 30px;
   border: 1px solid rgba(184, 184, 184, 0.192);
@@ -309,6 +315,7 @@ span svg {
 span p {
   font-size: 16px;
   margin-right: -38%;
+  overflow: hidden;
 }
 button {
   width: 100%;
@@ -319,31 +326,23 @@ button {
   background-color: #111c55;
   color: white;
 }
-.blue {
+.col-sm-4 :hover {
   background-color: #111c55;
+  color: white;
+  overflow: hidden;
 }
-
-.blue h2 {
-  color: #ffffff;
-  font-weight: 371;
+.data:hover {
+  box-shadow: 0px 4px 15px rgb(30, 28, 28);
+  background-color: #111c55;
+  padding: 38px;
 }
-
-.blue h3 {
-  color: #ffffff;
-  text-align: right;
-  margin-bottom: 20px;
+.col-sm-4 :hover h2,
+.col-sm-4 :hover h3,
+.col-sm-4 :hover p {
+  color: #ffff;
 }
-.blue p {
-  color: #ffffff;
-  font-size: 16px;
-}
-.blue button {
-  width: 100%;
-  padding: 10px;
-  margin-top: 10px;
-  border-radius: 10px;
-  border: none;
+.col-sm-4 :hover button {
+  background-color: #ffff;
   color: #111c55;
-  background-color: #ffffff;
 }
 </style>

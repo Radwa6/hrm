@@ -1,112 +1,107 @@
 <template>
-  <div>
-    <carousel
-      :per-page-custom="[[0, 1]]"
-      :autoplay="true"
-      :autoplay-timeout="1000"
-      :autoplay-hover-pause="true"
-      :navigation-enabled="false"
-      :pagination-enabled="false"
-      :loop="true"
-      @page-change="updateCurrentPage"
-      ref="carousel"
-    >
-      <slide v-for="(image, index) in images" :key="index" class="slide">
-        <img :src="image" alt="Image Slide" class="slide-img" />
-      </slide>
-    </carousel>
-    <div class="pagination-dots">
-      <button
+  <div id="carouselExampleIndicators" class="carousel slide">
+    <ol class="carousel-indicators">
+      <li
         v-for="(image, index) in images"
         :key="index"
-        @click="goToPage(index)"
-        :class="{ active: index === currentPage }"
+        :data-target="'#carouselExampleIndicators'"
+        :data-slide-to="index"
+        :class="{ active: index === currentIndex }"
+      ></li>
+    </ol>
+    <div class="carousel-inner justify-content-center">
+      <div
+        v-for="(image, index) in images"
+        :key="index"
+        class="carousel-item"
+        :class="{ active: index === currentIndex }"
       >
-        ●
-      </button>
+        <img
+          :src="image.src"
+          class="d-block w-100 justify-content-center"
+          :alt="image.alt"
+        />
+      </div>
     </div>
+    <a
+      class="carousel-control-prev justify-content-center"
+      href="#carouselExampleIndicators"
+      role="button"
+      data-slide="prev"
+    >
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a
+      class="carousel-control-next justify-content-center"
+      href="#carouselExampleIndicators"
+      role="button"
+      data-slide="next"
+    >
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
   </div>
 </template>
 
 <script>
-import { Carousel, Slide } from 'vue-carousel'
-
 export default {
-  components: {
-    Carousel,
-    Slide,
-  },
   data() {
     return {
-      currentPage: 0,
       images: [
-        require('@/assets/unsplash_cqbLg3lZEpk.png'),
-        require('@/assets/unsplash_g30P1zcOzXo.png'),
-        require('@/assets/unsplash_s3EjzLRA4Yw.png'),
-        require('@/assets/unsplash_xfngap_DToE.png'),
-        require('@/assets/unsplash_YFFGkE3y4F8.png'),
+        { src: require('@/assets/unsplash_cqbLg3lZEpk.png'), alt: 'Image 1' },
+        { src: require('@/assets/unsplash_g30P1zcOzXo.png'), alt: 'Image 2' },
+        { src: require('@/assets/unsplash_s3EjzLRA4Yw.png'), alt: 'Image 3' },
+        { src: require('@/assets/unsplash_xfngap_DToE.png'), alt: 'Image 4' },
+        { src: require('@/assets/unsplash_YFFGkE3y4F8.png'), alt: 'Image 5' },
       ],
+      currentIndex: 0,
     }
-  },
-  watch: {
-    currentPage(newIndex) {
-      this.$nextTick(() => {
-        this.$refs.carousel.goToPage(newIndex)
-      })
-    },
-  },
-  methods: {
-    goToPage(index) {
-      this.currentPage = index
-    },
-    updateCurrentPage(index) {
-      this.currentPage = index
-    },
   },
 }
 </script>
 
 <style scoped>
 .carousel {
-  width: 100%;
+  background-color: #f9fcff;
   height: 100%;
 }
-
-.slide {
-  display: flex;
+.jus {
+  background-color: #f9fcff;
+}
+.carousel-inner {
   align-items: center;
   justify-content: center;
-  background-color: #fbfdff;
+  background-color: #f9fcff;
 }
-
-.slide-img {
-  width: auto;
+.carousel-inner .carousel-item {
   height: 100%;
-  max-height: 100%;
-  object-fit: contain;
-  transform: none;
-  object-fit: cover;
+  background-color: #f9fcff;
 }
 
-.pagination-dots {
-  text-align: center;
-  margin-top: 10px;
+.carousel-inner .carousel-item img {
+  background-color: #f9fcff;
 }
 
-.pagination-dots button {
-  border: none;
-  background: none;
-  cursor: pointer;
-  color: #999999;
-  outline: none;
+.carousel-indicators {
+  position: absolute;
+  left: 34%;
+
+  transform: translateX(-45%);
+  z-index: 15;
 }
 
-.pagination-dots button:focus {
-  outline: none;
+.carousel-indicators li {
+  background-color: #000; /* Dot color */
+  width: 10px; /* Dot size */
+  height: 10px; /* Dot size */
+  border-radius: 50%;
 }
 
-.pagination-dots button.active {
-  color: #111c55;
-  font-weight: bold;
+.carousel-indicators .active {
+  background-color: #b2b2b2; /* Active dot color */
+}
+.carousel-item {
+  padding: 60px 100px;
 }
 </style>

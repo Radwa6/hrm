@@ -45,7 +45,9 @@
         </div>
         <div class="col-sm-4"></div>
         <div class="col-sm-4 logo">
-          <img :src="imageUrl0" alt="image" />
+          <router-link to="/ThePage">
+            <img :src="imageUrl0" alt="image" />
+          </router-link>
         </div>
       </div>
       <div class="row" style="text-align: right; margin-right: 20%">
