@@ -951,5 +951,6 @@ button:hover {
 .All .button {
   text-align: center;
   padding-bottom: 40px;
+  height: 220px;
 }
 </style>
