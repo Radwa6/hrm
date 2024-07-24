@@ -6,9 +6,9 @@
     data-aos-duration="1000"
     data-aos-delay="0"
   >
-    <div class="header row">
+    <section class="header row">
       <div
-        class="col-sm-6 animate__animated animate__fadeInDown"
+        class="col-sm-6 container animate__animated animate__fadeInDown"
         data-il8n="task"
       >
         <p>نظام إدارة الموارد البشرية</p>
@@ -20,7 +20,9 @@
           باستخدام منصة واحدة – ويأتي ذلك إضافةً إلى الاستفادة من خدمة العملاء
           التي لا مثيل له الان عبر منصة بصمة لادارة الموار البشرية
         </p>
-        <button>أبدا الان</button>
+        <router-link to="/Contact">
+          <button>أبدا الان</button>
+        </router-link>
       </div>
       <div
         class="col-sm-6 animate__animated animate__fadeInLeft"
@@ -28,14 +30,14 @@
       >
         <img :src="imageUrl" alt="" style="width: 100%; height: auto" />
       </div>
-    </div>
-    <div class="join" data-il8n="join">
+    </section>
+    <div class="join" data-il8n="join" id="sucess-section">
       <p>
         موثوق به من آلاف الموظفين في الشرق الأوسط.
         <a href=""><span>انضم اليهم</span></a>
       </p>
       <ImageSlider />
-      <h1>
+      <h1 id="advantages-section">
         قم بإدارة فريقك بشكل
         <a href=""
           ><span>
@@ -56,7 +58,7 @@
             </svg> </span
         ></a>
       </h1>
-      <p style="color: #696984; padding-top: 20px">
+      <p class="container" style="color: #696984; padding: 20px 180px">
         نعمل على تمكين الشركات من إدارة أعمالها باحترافية وتقديم أفضل تجربة
         أعمال لجميع عملاءنا من خلال برنامجنا الأفضل والأسهل استخداماً
       </p>
@@ -212,7 +214,7 @@
         </div>
       </div>
     </div>
-    <div class="us">
+    <div class="us" id="system-section">
       <h1>
         ركز على الاستراتيجية
         <a href=""
@@ -235,9 +237,10 @@
         ></a>
       </h1>
       <p
+        class="container"
         style="
           color: #696984;
-          padding: 20px 140px 60px;
+          padding: 20px 180px 60px;
           text-align: center;
           font-size: 20px;
         "
@@ -248,7 +251,7 @@
       </p>
       <sliderS />
     </div>
-    <div class="join">
+    <div class="join" id="servies-section">
       <h1>
         نقدم لكم العديد من
         <a href=""
@@ -270,59 +273,66 @@
             </svg> </span
         ></a>
       </h1>
-      <p style="color: #696984; padding: 20px 140px 0px">
+      <p class="container" style="color: #696984; padding: 20px 180px 0px">
         بوابة نحو إدارة موارد بشرية مُتكاملة مع منصة HRM، يمكن للشركات الاستثمار
         في إدارة موارد بشرية مُتكاملة تُساهم في تحسين كفاءة العمل وتقليل
         التكاليف وتعزيز رضا الموظفين.
       </p>
       <div class="container serves">
         <div class="row">
-          <div class="col-sm-1"></div>
-
-          <div class="col-sm-5 white">
-            <h3>إدارة الموظفين</h3>
-            <p>
-              يمكن إدارة بيانات الموظفين وتحديث معلوماتهم ومتابعة سيرهم المهني
-              بشكل دوري
-            </p>
+          <div class="col-sm-6">
+            <div class="white">
+              <h3>إدارة الموظفين</h3>
+              <p>
+                يمكن إدارة بيانات الموظفين وتحديث معلوماتهم ومتابعة سيرهم المهني
+                بشكل دوري
+              </p>
+            </div>
           </div>
-          <div class="col-sm-1"></div>
-          <div class="col-sm-5 blue">
-            <h3>الحضور والانصراف</h3>
-            <p>
-              إتاحة الربط المباشر مع أبرز أجهزة الحضور والانصراف بشكل متكامل
-            </p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-1"></div>
-
-          <div class="col-sm-5 blue">
-            <h3>إدارة الإجازات</h3>
-            <p>احتساب أرصدة الإجازة ومستحقاتها بمرونة عالية حسب سياسة الشركة</p>
-          </div>
-          <div class="col-sm-1"></div>
-
-          <div class="col-sm-5 white">
-            <h3>الخدمات الذاتية</h3>
-            <p>
-              تمكين التفاعل والطلبات المباشرة من الموظفين باستخدام الطلبات
-              المباشرة
-            </p>
+          <div class="col-sm-6">
+            <div class="blue">
+              <h3>الحضور والانصراف</h3>
+              <p>
+                إتاحة الربط المباشر مع أبرز أجهزة الحضور والانصراف بشكل متكامل
+              </p>
+            </div>
           </div>
         </div>
         <div class="row">
-          <div class="col-sm-1"></div>
-
-          <div class="col-sm-5 white">
-            <h3>تصفية المستحقات</h3>
-            <p>إجراءات إنهاء الخدمة واحتساب المستحقات حسب الأنظمة والتشريعات</p>
+          <div class="col-sm-6">
+            <div class="blue">
+              <h3>إدارة الإجازات</h3>
+              <p>
+                احتساب أرصدة الإجازة ومستحقاتها بمرونة عالية حسب سياسة الشركة
+              </p>
+            </div>
           </div>
-          <div class="col-sm-1"></div>
 
-          <div class="col-sm-5 blue">
-            <h3>مسيرات الرواتب</h3>
-            <p>إصدار المسيرات والملفات البنكية الخاصة بصرف الرواتب</p>
+          <div class="col-sm-6">
+            <div class="white">
+              <h3>الخدمات الذاتية</h3>
+              <p>
+                تمكين التفاعل والطلبات المباشرة من الموظفين باستخدام الطلبات
+                المباشرة
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="white">
+              <h3>تصفية المستحقات</h3>
+              <p>
+                إجراءات إنهاء الخدمة واحتساب المستحقات حسب الأنظمة والتشريعات
+              </p>
+            </div>
+          </div>
+
+          <div class="col-sm-6">
+            <div class="blue">
+              <h3>مسيرات الرواتب</h3>
+              <p>إصدار المسيرات والملفات البنكية الخاصة بصرف الرواتب</p>
+            </div>
           </div>
         </div>
       </div>
@@ -333,9 +343,7 @@
 
         <div class="col-sm-6">
           <p style="color: #df8317; text-align: right">قطاعات العمل</p>
-          <h1 style="color: #111c55; text-align: right; font-size: 46px">
-            تبسيط مهام الموارد البشرية
-          </h1>
+          <h1 style="text-align: right">تبسيط مهام الموارد البشرية</h1>
           <p
             style="
               color: #493f87;
@@ -412,17 +420,17 @@
             </svg>
             متابعة التقارير الخاصة بالموظفين
           </p>
-          <button data-v-2645c328="" style="margin-top: 40px">
-            معرفة المزيد
-          </button>
+          <router-link to="/BusinessSectors" active-class="active-link">
+            <button data-v-2645c328="" style="margin-top: 40px">
+              معرفة المزيد
+            </button>
+          </router-link>
         </div>
       </div>
       <div class="row">
         <div class="col-sm-6">
           <p style="color: #df8317; text-align: right">إدارة فريق العمل</p>
-          <h1 style="color: #111c55; text-align: right">
-            تهيئة بيئة العمل لفريق فعّال
-          </h1>
+          <h1 style="text-align: right">تهيئة بيئة العمل لفريق فعّال</h1>
           <p
             style="
               color: #493f87;
@@ -499,9 +507,11 @@
             </svg>
             إدارة فعالة لحالات الموظفين
           </p>
-          <button data-v-2645c328="" style="margin-top: 40px">
-            معرفة المزيد
-          </button>
+          <router-link to="/TeamManagement" active-class="active-link">
+            <button data-v-2645c328="" style="margin-top: 40px">
+              معرفة المزيد
+            </button>
+          </router-link>
         </div>
         <div class="col-sm-6">
           <img :src="imageUrl2" alt="" style="width: 86%" />
@@ -515,7 +525,7 @@
           <p style="color: #df8317; text-align: right">
             متابعة الحضور والانصراف
           </p>
-          <h1 style="color: #111c55; text-align: right; padding: 0 10px">
+          <h1 style="text-align: right; padding: 0 10px">
             متابعة مواعيد الحضور والانصراف بشكل دوري
           </h1>
           <p
@@ -594,32 +604,32 @@
             </svg>
             تنظيم أوقات العمل وتوزيع المناوبات.
           </p>
-          <button
-            data-v-2645c328=""
-            style="margin-top: 40px; padding: 12px 10px"
-          >
-            أحصل عل عرض تجريبي
-            <svg
-              width="10"
-              height="15"
-              viewBox="0 0 10 15"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
+          <router-link to="/Contact">
+            <button
+              data-v-2645c328=""
+              style="margin-top: 40px; padding: 12px 10px"
             >
-              <path
-                d="M2.52795 3.28634L1.60542 7.43987C1.5849 7.5501 1.54378 7.65119 1.48451 7.73711C1.42525 7.82304 1.34906 7.89203 1.26048 7.93999C1.1719 7.98795 1.07276 8.01388 0.968958 8.01624C0.865158 8.0186 0.758829 7.99734 0.656316 7.95373C0.553803 7.91012 0.457204 7.84505 0.372285 7.76241C0.287366 7.67977 0.215864 7.58124 0.162045 7.4727C0.108227 7.36417 0.0731927 7.24785 0.0590357 7.1307C0.0448782 7.01354 0.0518867 6.89794 0.0796428 6.79079L1.43631 0.682652C1.4841 0.468099 1.61022 0.296532 1.78697 0.205634C1.96372 0.114737 2.17663 0.111942 2.37896 0.197866L8.1366 2.64724C8.2399 2.68698 8.33801 2.74852 8.42508 2.82819C8.51214 2.90785 8.58638 3.00401 8.64336 3.11091C8.70034 3.21782 8.73889 3.33329 8.75672 3.45044C8.77455 3.56759 8.77129 3.68401 8.74713 3.79277C8.72298 3.90152 8.67842 4.00038 8.61613 4.08344C8.55383 4.1665 8.47507 4.23206 8.38453 4.27621C8.294 4.32037 8.19356 4.34221 8.08919 4.34044C7.98483 4.33867 7.87868 4.31331 7.77708 4.26589L3.86189 2.60032L9.19257 12.9656C9.302 13.1784 9.33667 13.4186 9.28897 13.6334C9.24126 13.8481 9.11509 14.0199 8.9382 14.1109C8.76131 14.2019 8.54819 14.2046 8.34573 14.1184C8.14328 14.0323 7.96806 13.8644 7.85864 13.6516L2.52795 3.28634Z"
-                fill="white"
-              />
-            </svg>
-          </button>
+              أحصل عل عرض تجريبي
+              <svg
+                width="10"
+                height="15"
+                viewBox="0 0 10 15"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M2.52795 3.28634L1.60542 7.43987C1.5849 7.5501 1.54378 7.65119 1.48451 7.73711C1.42525 7.82304 1.34906 7.89203 1.26048 7.93999C1.1719 7.98795 1.07276 8.01388 0.968958 8.01624C0.865158 8.0186 0.758829 7.99734 0.656316 7.95373C0.553803 7.91012 0.457204 7.84505 0.372285 7.76241C0.287366 7.67977 0.215864 7.58124 0.162045 7.4727C0.108227 7.36417 0.0731927 7.24785 0.0590357 7.1307C0.0448782 7.01354 0.0518867 6.89794 0.0796428 6.79079L1.43631 0.682652C1.4841 0.468099 1.61022 0.296532 1.78697 0.205634C1.96372 0.114737 2.17663 0.111942 2.37896 0.197866L8.1366 2.64724C8.2399 2.68698 8.33801 2.74852 8.42508 2.82819C8.51214 2.90785 8.58638 3.00401 8.64336 3.11091C8.70034 3.21782 8.73889 3.33329 8.75672 3.45044C8.77455 3.56759 8.77129 3.68401 8.74713 3.79277C8.72298 3.90152 8.67842 4.00038 8.61613 4.08344C8.55383 4.1665 8.47507 4.23206 8.38453 4.27621C8.294 4.32037 8.19356 4.34221 8.08919 4.34044C7.98483 4.33867 7.87868 4.31331 7.77708 4.26589L3.86189 2.60032L9.19257 12.9656C9.302 13.1784 9.33667 13.4186 9.28897 13.6334C9.24126 13.8481 9.11509 14.0199 8.9382 14.1109C8.76131 14.2019 8.54819 14.2046 8.34573 14.1184C8.14328 14.0323 7.96806 13.8644 7.85864 13.6516L2.52795 3.28634Z"
+                  fill="white"
+                />
+              </svg>
+            </button>
+          </router-link>
         </div>
       </div>
       <div class="row">
         <div class="col-sm-6">
           <p style="color: #df8317; text-align: right">الخدمة الذاتية للموظف</p>
-          <h1 style="color: #111c55; text-align: right">
-            إتاحة الخدمة الذاتية للموظفين
-          </h1>
+          <h1 style="text-align: right">إتاحة الخدمة الذاتية للموظفين</h1>
           <p
             style="
               color: #493f87;
@@ -696,40 +706,46 @@
             </svg>
             إدارة العمل عن بعد
           </p>
-          <button
-            data-v-2645c328=""
-            style="margin-top: 40px; padding: 12px 10px"
-          >
-            أبدا نسختك التجريبة الان
-          </button>
+          <router-link to="/Contact">
+            <button
+              data-v-2645c328=""
+              style="margin-top: 40px; padding: 12px 10px"
+            >
+              أبدا نسختك التجريبة الان
+            </button>
+          </router-link>
         </div>
         <div class="col-sm-6">
           <img :src="imageUrl4" alt="" style="width: 86%" />
         </div>
       </div>
     </div>
-    <div class="All">
+    <div class="All container">
       <p style="color: #df8317; font-size: 20px">إدارة جميع الموارد البشرية</p>
-      <h1 style="color: #111c55">
-        هل ترغب بتسهيل عمليات الموارد البشرية اليومية للموظفين في منشأتك؟
-      </h1>
+      <h1>هل ترغب بتسهيل عمليات الموارد البشرية اليومية للموظفين في منشأتك؟</h1>
       <p>
         ارفع نسب الإنجاز في إدارتك الآن عبر منصتنا حيث نوفر لكم يوفر لك حلاً
         قويًا لكل ما يخص عمليـات إدارة الموارد البشرية
       </p>
       <div class="button">
-        <button data-v-2645c328="" style="margin-top: 40px">تواصل معانا</button>
-        <button
-          data-v-2645c328=""
-          style="
-            margin-top: 40px;
-            background-color: #df8317;
-            margin-right: 10px;
-            text-align: center;
-          "
-        >
-          اشترك الان
-        </button>
+        <router-link to="/Contact">
+          <button data-v-2645c328="" style="margin-top: 40px">
+            تواصل معانا
+          </button>
+        </router-link>
+        <router-link to="/ThePrice">
+          <button
+            data-v-2645c328=""
+            style="
+              margin-top: 40px;
+              background-color: #df8317;
+              margin-right: 10px;
+              text-align: center;
+            "
+          >
+            اشترك الان
+          </button>
+        </router-link>
       </div>
     </div>
   </div>
@@ -761,17 +777,22 @@ export default {
   width: 100%;
 }
 .header {
-  padding: 60px 10% 0;
+  padding: 60px 160px 0;
   background-color: #ffff;
-  height: 9%;
+}
+h1 {
+  font-size: 32px;
+  color: #111c55;
 }
 .header h1 {
   background-color: white;
   text-align: right;
   font-weight: bold;
+  font-size: 40px;
 }
 .header p {
   color: #df8317;
+  font-size: 20px;
 }
 .header .text {
   color: #757095;
@@ -787,10 +808,14 @@ button {
   margin-top: 30px;
   box-shadow: 8px 8px 8px rgba(205, 205, 205, 0.409);
 }
-
+button:hover {
+  box-shadow: 8px 8px 8px rgba(49, 49, 49, 0.717);
+  padding: 14px 50px;
+  font-size: 20px;
+}
 .join {
   background-color: #fbfdff;
-  padding: 40px 100px;
+  padding: 60px 100px;
   margin-bottom: 40px;
 }
 .join p {
@@ -802,8 +827,8 @@ button {
 .join h1 {
   background-color: #fbfdff;
   text-align: center;
-  color: #1e1f4b;
   font-weight: bold;
+  margin-top: 30px;
 }
 .join span {
   background-color: #fbfdff;
@@ -836,7 +861,7 @@ button {
 }
 .serves {
   text-align: right;
-  padding: 40px 100px;
+  padding: 40px 80px;
   margin-bottom: 60px;
 }
 .serves .row {
@@ -851,6 +876,9 @@ button {
   text-align: right;
   color: #111c55;
 }
+.serves h1 {
+  font-size: 30px;
+}
 .serves h3 {
   text-align: right;
   color: #111c55;
@@ -860,12 +888,14 @@ button {
   border-radius: 8px;
   color: #ffffff;
   padding: 20px;
+  height: 180px;
 }
 .serves .white {
   color: #111c55;
   border-radius: 8px;
   background-color: #fbfdff;
   padding: 20px;
+  height: 180px;
 }
 .serves .white p {
   background-color: #fbfdff;
@@ -882,6 +912,7 @@ button {
 .serves .blue:hover {
   color: #111c55;
   background-color: #fbfdff;
+  box-shadow: 8px 8px 8px rgba(49, 49, 49, 0.717);
 }
 .serves .blue:hover p {
   color: #111c55;
@@ -893,6 +924,7 @@ button {
 .serves .white:hover {
   background-color: #111c55;
   color: #f9fcff;
+  box-shadow: 8px 8px 8px rgba(49, 49, 49, 0.717);
 }
 .serves .white:hover p {
   background-color: #111c55;
@@ -903,7 +935,7 @@ button {
 }
 .All {
   align-items: center;
-  padding: 0 300px;
+  padding: 0 180px;
 }
 .All h1 {
   text-align: center;

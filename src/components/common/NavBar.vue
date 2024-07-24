@@ -12,13 +12,24 @@
           <li>الرئيسية</li>
         </router-link>
 
-        <router-link to="/TeamManagement" active-class="active-link">
+        <router-link
+          :to="{ path: '/ThePage', hash: '#system-section' }"
+          active-class="active-link"
+        >
           <li>النظام</li>
         </router-link>
 
-        <li>خدماتنا</li>
+        <router-link
+          :to="{ path: '/ThePage', hash: '#servies-section' }"
+          active-class="active-link"
+        >
+          <li>خدماتنا</li>
+        </router-link>
 
-        <router-link to="/BusinessSectors" active-class="active-link">
+        <router-link
+          :to="{ path: '/ThePage', hash: '#advantages-section' }"
+          active-class="active-link"
+        >
           <li>المزايا</li>
         </router-link>
 
@@ -26,7 +37,12 @@
           <li>الاسعار</li>
         </router-link>
 
-        <li>شركاء النجاح</li>
+        <router-link
+          :to="{ path: '/ThePage', hash: '#sucess-section' }"
+          active-class="active-link"
+        >
+          <li>شركاء النجاح</li>
+        </router-link>
       </ul>
     </div>
     <div class="col-sm-5 d-inline">
@@ -71,7 +87,6 @@ export default {
       currentLanguage: 'English',
 
       imageUrl: require('@/assets/WhatsApp_Image_2024-05-12_at_3.29 2.png'),
-      imageUrl1: require('@/assets/Eclipse.png'),
     }
   },
   methods: {

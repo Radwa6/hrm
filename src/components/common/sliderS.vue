@@ -49,13 +49,15 @@ export default {
   data() {
     return {
       images: [
-        { src: require('@/assets/unsplash_cqbLg3lZEpk.png'), alt: 'Image 1' },
-        { src: require('@/assets/unsplash_g30P1zcOzXo.png'), alt: 'Image 2' },
         { src: require('@/assets/unsplash_s3EjzLRA4Yw.png'), alt: 'Image 3' },
-        { src: require('@/assets/unsplash_xfngap_DToE.png'), alt: 'Image 4' },
         { src: require('@/assets/unsplash_YFFGkE3y4F8.png'), alt: 'Image 5' },
+
+        { src: require('@/assets/Slides Box.png'), alt: 'Image 1' },
+
+        { src: require('@/assets/unsplash_g30P1zcOzXo.png'), alt: 'Image 2' },
+        { src: require('@/assets/unsplash_xfngap_DToE.png'), alt: 'Image 4' },
       ],
-      currentIndex: 0,
+      currentIndex: 2,
     }
   },
 }
@@ -81,13 +83,13 @@ export default {
 
 .carousel-inner .carousel-item img {
   background-color: #f9fcff;
+  height: 440px;
 }
 
 .carousel-indicators {
   position: absolute;
   left: 34%;
-
-  transform: translateX(-45%);
+  transform: translateX(-42%);
   z-index: 15;
 }
 
@@ -102,6 +104,6 @@ export default {
   background-color: #b2b2b2; /* Active dot color */
 }
 .carousel-item {
-  padding: 60px 100px;
+  padding: 20px 40px 90px;
 }
 </style>

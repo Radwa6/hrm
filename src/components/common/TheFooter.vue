@@ -13,7 +13,9 @@
       <div class="col-sm-3" style="margin-bottom: 60px">
         <h1>روابط هامة</h1>
         <ul>
-          <li>الرئيسية</li>
+          <router-link to="/ThePage" active-class="active-link">
+            <li>الرئيسية</li>
+          </router-link>
           <li>شركاء النجاح</li>
           <li>خدماتنا</li>
           <li>عن النظام</li>
@@ -159,7 +161,7 @@ h1 {
   margin-bottom: 30px;
   font: Cairo;
   font-weight: bold;
-  font-size: 26px;
+  font-size: 24px;
 }
 ul {
   list-style: none;
@@ -177,5 +179,8 @@ li {
 .social img {
   margin-top: 10px;
   margin-left: 10px;
+}
+.active-link {
+  color: #df8317;
 }
 </style>

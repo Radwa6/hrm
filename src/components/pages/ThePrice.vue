@@ -90,7 +90,7 @@
       </div>
     </div>
     <div class="col-sm-4 animate__animated animate__fadeInUp" data-il8n="task">
-      <div class="data">
+      <div class="blue">
         <h2>الباقة المتقدمة</h2>
         <hr style="border-color: lavender; border-style: solid" />
         <h3>600 (ريال \ شهريًا)</h3>
@@ -326,6 +326,48 @@ button {
   background-color: #111c55;
   color: white;
 }
+.blue {
+  background-color: #111c55;
+  color: white;
+  overflow: hidden;
+  margin-top: 40px;
+  padding: 30px;
+  border: 1px solid rgba(184, 184, 184, 0.192);
+  box-shadow: 8px 8px 8px rgba(184, 184, 184, 0.192);
+}
+.blue h2,
+.blue h3,
+.blue p {
+  color: #ffff;
+}
+.blue button {
+  background-color: #ffff;
+  color: #111c55;
+}
+
+.col-sm-4 .blue:hover {
+  background-color: #ffff;
+  color: #111c55;
+  padding: 38px;
+}
+.col-sm-4 .blue:hover h2,
+.col-sm-4 .blue:hover h3,
+.col-sm-4 .blue:hover p {
+  color: #111c55;
+  background-color: #ffff;
+}
+.col-sm-4 .blue:hover span {
+  background-color: #ffff;
+}
+.col-sm-4 .blue:hover svg {
+  background-color: #ffff;
+}
+
+.col-sm-4 .blue:hover button {
+  color: #ffff;
+  background-color: #111c55;
+}
+
 .col-sm-4 :hover {
   background-color: #111c55;
   color: white;

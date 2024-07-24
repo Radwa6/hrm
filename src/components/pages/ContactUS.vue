@@ -48,7 +48,7 @@
           rows="8"
         />
       </div>
-      <router-link to="/Contact">
+      <router-link to="/">
         <button type="submit">ارسال الطلب</button>
       </router-link>
     </form>
