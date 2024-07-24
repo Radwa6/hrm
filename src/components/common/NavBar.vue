@@ -72,10 +72,6 @@
         {{ currentLanguage }}
       </a>
     </div>
-
-    <div class="container">
-      <img :src="imageUrl1" alt="image" class="overlay-img" />
-    </div>
   </div>
 </template>
 
