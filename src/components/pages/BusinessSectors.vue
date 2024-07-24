@@ -100,7 +100,14 @@
     </div>
 
     <div class="join" data-il8n="join">
-      <img :src="imageUrl1" alt="" style="width: 100%; height: auto" />
+      <div class="text-slider-container">
+        <div class="text-slider">
+          <p class="scrolling-text">
+            إدارة فريق العمل . مهام الموارد البشرية . متابعة الموظفين . الخدمات
+            الذاتية ، تصفية المستحقات . الحضور والانصراف . مسيرات الرواتب .
+          </p>
+        </div>
+      </div>
 
       <h1>
         حسّن مستويات الأداء في إدارتك
@@ -810,5 +817,41 @@ button {
   padding-bottom: 40px;
   width: 40%;
   display: flex;
+}
+.text-slider-container {
+  width: 100%;
+  padding: 10px;
+  color: #ffff;
+  overflow: hidden;
+  background-color: #111c55;
+}
+
+.text-slider {
+  display: inline-block;
+  white-space: nowrap;
+  animation: scroll 30s linear infinite;
+}
+
+.text-slider .scrolling-text {
+  display: inline-block;
+  padding-left: 100%;
+  font-family: 'Cairo', sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 37.65px;
+  letter-spacing: 3%;
+  text-align: right;
+  color: transparent;
+  -webkit-text-stroke: 1px white;
+  text-shadow: 1px 1px 0px #111c55, -1px 1px 0px #111c55, 1px -1px 0px #111c55,
+    -1px -1px 0px #111c55;
+}
+@keyframes scroll {
+  0% {
+    transform: translateX(100%); /* Start from right */
+  }
+  100% {
+    transform: translateX(-100%); /* End at left */
+  }
 }
 </style>
