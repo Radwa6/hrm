@@ -11,6 +11,7 @@
     </div>
   </div>
 </template>
+<script src="https://unpkg.com/scrollreveal"></script>
 
 <script>
 import NavBar from './components/common/NavBar.vue'
@@ -40,7 +41,6 @@ export default {
   overflow: hidden;
 }
 .NavBar {
-  background-color: #ffff;
   padding: 30px 0;
 }
 </style>

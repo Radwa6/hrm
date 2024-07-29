@@ -121,31 +121,31 @@
         </div>
       </div>
 
-      <h1>
-        ارفع نسب الإنجاز في إدارتك
-        <a href="" style="color: #df8317">
-          الآن<svg
-            width="10"
-            height="31"
-            viewBox="0 0 30 31"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M8.49992 1.70834L9.66659 5.93751M5.43742 10.1667L1.20825 9.00001M18.4166 4.47918L15.4999 7.25001M6.74992 16L3.97909 18.9167M11.1249 11.625L18.4166 29.125L21.0416 21.5417L28.6249 18.9167L11.1249 11.625Z"
-              stroke="#DF8317"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-          </svg>
-        </a>
-      </h1>
-      <p style="color: #696984; padding-top: 20px; padding: 0 460px">
-        نعمل على تمكين الشركات من إدارة أعمالها باحترافية وتقديم أفضل تجربة
-        أعمال لجميع عملاءنا من خلال برنامجنا الأفضل والأسهل استخداماً
-      </p>
-      <div class="animate" style="padding: 0 140px">
+      <div class="animate hidden-section" style="padding: 0 140px">
+        <h1>
+          ارفع نسب الإنجاز في إدارتك
+          <a href="" style="color: #df8317">
+            الآن<svg
+              width="10"
+              height="31"
+              viewBox="0 0 30 31"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M8.49992 1.70834L9.66659 5.93751M5.43742 10.1667L1.20825 9.00001M18.4166 4.47918L15.4999 7.25001M6.74992 16L3.97909 18.9167M11.1249 11.625L18.4166 29.125L21.0416 21.5417L28.6249 18.9167L11.1249 11.625Z"
+                stroke="#DF8317"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </a>
+        </h1>
+        <p style="color: #696984; padding-top: 20px; padding: 0 260px">
+          نعمل على تمكين الشركات من إدارة أعمالها باحترافية وتقديم أفضل تجربة
+          أعمال لجميع عملاءنا من خلال برنامجنا الأفضل والأسهل استخداماً
+        </p>
         <div class="row">
           <div class="col-sm-3">
             <div class="data">
@@ -389,7 +389,7 @@
         </div>
       </div>
 
-      <div class="row" style="margin-top: 6%">
+      <div class="row hidden-section" style="margin-top: 6%">
         <div class="col-sm-6">
           <img :src="imageUrl2" alt="" style="width: 86%" />
         </div>
@@ -490,7 +490,7 @@
         </div>
       </div>
 
-      <div class="row">
+      <div class="row hidden-section">
         <div class="col-sm-6" style="margin-top: 60px">
           <p style="color: #df8317; text-align: right">إدارة فريق العمل</p>
           <h1
@@ -591,6 +591,7 @@
                 viewBox="0 0 10 15"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
+                style="margin-top: 4%; width: 10px"
               >
                 <path
                   d="M2.52795 3.28634L1.60542 7.43987C1.5849 7.5501 1.54378 7.65119 1.48451 7.73711C1.42525 7.82304 1.34906 7.89203 1.26048 7.93999C1.1719 7.98795 1.07276 8.01388 0.968958 8.01624C0.865158 8.0186 0.758829 7.99734 0.656316 7.95373C0.553803 7.91012 0.457204 7.84505 0.372285 7.76241C0.287366 7.67977 0.215864 7.58124 0.162045 7.4727C0.108227 7.36417 0.0731927 7.24785 0.0590357 7.1307C0.0448782 7.01354 0.0518867 6.89794 0.0796428 6.79079L1.43631 0.682652C1.4841 0.468099 1.61022 0.296532 1.78697 0.205634C1.96372 0.114737 2.17663 0.111942 2.37896 0.197866L8.1366 2.64724C8.2399 2.68698 8.33801 2.74852 8.42508 2.82819C8.51214 2.90785 8.58638 3.00401 8.64336 3.11091C8.70034 3.21782 8.73889 3.33329 8.75672 3.45044C8.77455 3.56759 8.77129 3.68401 8.74713 3.79277C8.72298 3.90152 8.67842 4.00038 8.61613 4.08344C8.55383 4.1665 8.47507 4.23206 8.38453 4.27621C8.294 4.32037 8.19356 4.34221 8.08919 4.34044C7.98483 4.33867 7.87868 4.31331 7.77708 4.26589L3.86189 2.60032L9.19257 12.9656C9.302 13.1784 9.33667 13.4186 9.28897 13.6334C9.24126 13.8481 9.11509 14.0199 8.9382 14.1109C8.76131 14.2019 8.54819 14.2046 8.34573 14.1184C8.14328 14.0323 7.96806 13.8644 7.85864 13.6516L2.52795 3.28634Z"
@@ -606,7 +607,7 @@
         </div>
       </div>
 
-      <div class="row">
+      <div class="row hidden-section">
         <div class="col-sm-6">
           <img :src="imageUrl4" alt="" style="width: 86%" />
         </div>
@@ -712,7 +713,7 @@
         </div>
       </div>
 
-      <div class="row">
+      <div class="row hidden-section">
         <div class="col-sm-6" style="margin-top: 60px">
           <p style="color: #df8317; text-align: right">إدارة بيانات الموظفين</p>
           <h1
@@ -813,6 +814,7 @@
                 viewBox="0 0 10 15"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
+                style="margin-top: 4%; width: 12px"
               >
                 <path
                   d="M2.52795 3.28634L1.60542 7.43987C1.5849 7.5501 1.54378 7.65119 1.48451 7.73711C1.42525 7.82304 1.34906 7.89203 1.26048 7.93999C1.1719 7.98795 1.07276 8.01388 0.968958 8.01624C0.865158 8.0186 0.758829 7.99734 0.656316 7.95373C0.553803 7.91012 0.457204 7.84505 0.372285 7.76241C0.287366 7.67977 0.215864 7.58124 0.162045 7.4727C0.108227 7.36417 0.0731927 7.24785 0.0590357 7.1307C0.0448782 7.01354 0.0518867 6.89794 0.0796428 6.79079L1.43631 0.682652C1.4841 0.468099 1.61022 0.296532 1.78697 0.205634C1.96372 0.114737 2.17663 0.111942 2.37896 0.197866L8.1366 2.64724C8.2399 2.68698 8.33801 2.74852 8.42508 2.82819C8.51214 2.90785 8.58638 3.00401 8.64336 3.11091C8.70034 3.21782 8.73889 3.33329 8.75672 3.45044C8.77455 3.56759 8.77129 3.68401 8.74713 3.79277C8.72298 3.90152 8.67842 4.00038 8.61613 4.08344C8.55383 4.1665 8.47507 4.23206 8.38453 4.27621C8.294 4.32037 8.19356 4.34221 8.08919 4.34044C7.98483 4.33867 7.87868 4.31331 7.77708 4.26589L3.86189 2.60032L9.19257 12.9656C9.302 13.1784 9.33667 13.4186 9.28897 13.6334C9.24126 13.8481 9.11509 14.0199 8.9382 14.1109C8.76131 14.2019 8.54819 14.2046 8.34573 14.1184C8.14328 14.0323 7.96806 13.8644 7.85864 13.6516L2.52795 3.28634Z"
@@ -828,7 +830,7 @@
         </div>
       </div>
 
-      <div class="All">
+      <div class="All hidden-section container">
         <p style="color: #df8317; font-size: 20px">
           إدارة جميع الموارد البشرية
         </p>
@@ -839,11 +841,13 @@
           ارفع نسب الإنجاز في إدارتك الآن عبر منصتنا حيث نوفر لكم يوفر لك حلاً
           قويًا لكل ما يخص عمليـات إدارة الموارد البشرية
         </p>
-        <router-link to="/Contact">
-          <div class="button">
+        <div class="button">
+          <router-link to="/Contact">
             <button data-v-2645c328="" style="margin-top: 40px">
               تواصل معانا
             </button>
+          </router-link>
+          <router-link to="/ThePrice">
             <button
               data-v-2645c328=""
               style="
@@ -855,14 +859,16 @@
             >
               اشترك الان
             </button>
-          </div>
-        </router-link>
+          </router-link>
+        </div>
       </div>
     </div>
   </div>
 </template>
 
 <script>
+import { onMounted } from 'vue'
+import ScrollReveal from 'scrollreveal'
 export default {
   name: 'TeamManagement',
   data() {
@@ -875,10 +881,29 @@ export default {
       imageUrl5: require('@/assets/Frame 2147223593.png'),
     }
   },
+  mounted() {
+    const scrollReveal = ScrollReveal({
+      reset: true,
+      mobile: true,
+      easing: 'ease-in-out',
+      duration: 800,
+      delay: 0,
+    })
+
+    scrollReveal.reveal('.hidden-section', {
+      origin: 'top',
+      distance: '50px',
+      opacity: 0,
+      scale: 0.9,
+    })
+  },
 }
 </script>
 
 <style scoped>
+a {
+  text-decoration: none;
+}
 .TeamManagement {
   background-color: #ffff;
   width: 100%;
@@ -886,6 +911,17 @@ export default {
 .header {
   padding: 40px 120px;
   text-align: right;
+  background-image: url('/src//assets/Header\ bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  top: 14;
+  padding-top: 10%;
+  height: calc(100vh -14vh);
+}
+a:hover {
+  text-decoration: none;
 }
 .header h1 {
   color: #111c55;
@@ -926,6 +962,7 @@ button {
 .join p {
   color: #696984;
   font-size: 20px;
+  margin-bottom: 40px;
 }
 .join svg {
   width: 50px;
@@ -938,7 +975,6 @@ button {
   margin-top: 40px;
   padding: 40px;
   background-color: #ffff;
-
   border: 1px solid rgba(184, 184, 184, 0.192);
   box-shadow: 8px 8px 8px rgba(184, 184, 184, 0.192);
   text-align: right;
@@ -954,6 +990,7 @@ button {
   box-shadow: 0px 4px 15px rgb(30, 28, 28);
   background-color: #111c55;
   padding: 38px;
+  margin-top: 2px;
 }
 .animate .col-sm-3 :hover h2,
 .animate .col-sm-3 :hover h3,
@@ -977,7 +1014,7 @@ button {
 }
 .All {
   align-items: center;
-  padding: 80px 300px 40px;
+  padding: 0 180px;
 }
 .All h1 {
   text-align: center;
@@ -993,10 +1030,11 @@ button {
 }
 .All .button {
   text-align: center;
-  margin-right: 30%;
+  margin-right: 26%;
   padding-bottom: 40px;
-  width: 40%;
+  width: 60%;
   display: flex;
+  height: 120px;
 }
 
 .text-slider-container {
@@ -1010,6 +1048,7 @@ button {
 .text-slider {
   display: inline-block;
   white-space: nowrap;
+  height: 50px;
   animation: scroll 30s linear infinite;
 }
 

@@ -277,11 +277,20 @@ export default {
   padding: 60px 160px;
   display: flex;
   justify-content: space-between;
+  background-image: url('/src//assets/Header\ bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  top: 14;
+  padding-top: 6%;
+  height: calc(100vh -14vh);
 }
 
 .data {
   background-color: #ffff;
   margin-top: 40px;
+  margin-bottom: 60px;
   padding: 30px;
   border: 1px solid rgba(184, 184, 184, 0.192);
   box-shadow: 8px 8px 8px rgba(184, 184, 184, 0.192);
@@ -290,6 +299,7 @@ export default {
 h1 {
   color: #222751;
   font-weight: 671;
+  margin-top: 60px;
 }
 h2 {
   color: #222751;

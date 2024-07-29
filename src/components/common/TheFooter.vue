@@ -141,13 +141,25 @@ export default {
 <style scoped>
 .TheFooter {
   font-family: Cairo;
-
   text-align: right;
   margin-top: 40px;
-  padding: 20px 80px 20px 0;
   width: 100%;
+  position: relative;
+  z-index: 0;
+  background-image: url('/src/assets/Frame 2147223532.png');
+  background-position: top center;
+  background-repeat: no-repeat;
+  font-family: Cairo;
+  text-align: right;
+  margin-top: 40px;
+  padding: 80px 140px 0 0;
+  width: 100%;
+  z-index: 0;
+  background-position: center calc(10% - 30px);
 }
-
+a:hover {
+  text-decoration: none;
+}
 .logo {
   width: 40%;
   margin-bottom: 20px;

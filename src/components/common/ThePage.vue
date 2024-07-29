@@ -1,43 +1,41 @@
 <template>
-  <div
-    class="ThePage"
-    dir="rtl"
-    data-aos-easing="ease-in-out"
-    data-aos-duration="1000"
-    data-aos-delay="0"
-  >
-    <section class="header row">
-      <div
-        class="col-sm-6 container animate__animated animate__fadeInDown"
-        data-il8n="task"
-      >
-        <p>نظام إدارة الموارد البشرية</p>
-        <h1>جميع مهام الموارد البشرية في مكان واحد</h1>
-        <p class="text">
-          أدر إجراءات الموارد البشرية من منصة واحدة بدءً بكشوف الرواتب إلى طلبات
-          الإجازات و اعمل على تعزيز الإنتاجية الخاصة بك في لإدارة بيانات
-          الموظفين وأتمتة كشوف الرواتب والإشراف على الأداء والمزيد من الخصائص
-          باستخدام منصة واحدة – ويأتي ذلك إضافةً إلى الاستفادة من خدمة العملاء
-          التي لا مثيل له الان عبر منصة بصمة لادارة الموار البشرية
-        </p>
-        <router-link to="/Contact">
-          <button>أبدا الان</button>
-        </router-link>
-      </div>
-      <div
-        class="col-sm-6 animate__animated animate__fadeInLeft"
-        data-il8n="task"
-      >
-        <img :src="imageUrl" alt="" style="width: 100%; height: auto" />
+  <div class="ThePage" dir="rtl">
+    <section class="header">
+      <div class="row">
+        <div
+          class="col-sm-6 container animate__animated animate__fadeInDown"
+          data-il8n="task"
+        >
+          <p>نظام إدارة الموارد البشرية</p>
+          <h1>جميع مهام الموارد البشرية في مكان واحد</h1>
+          <p class="text">
+            أدر إجراءات الموارد البشرية من منصة واحدة بدءً بكشوف الرواتب إلى
+            طلبات الإجازات و اعمل على تعزيز الإنتاجية الخاصة بك في لإدارة بيانات
+            الموظفين وأتمتة كشوف الرواتب والإشراف على الأداء والمزيد من الخصائص
+            باستخدام منصة واحدة – ويأتي ذلك إضافةً إلى الاستفادة من خدمة العملاء
+            التي لا مثيل له الان عبر منصة بصمة لادارة الموار البشرية
+          </p>
+          <router-link to="/Contact">
+            <button>أبدا الان</button>
+          </router-link>
+        </div>
+        <div
+          class="col-sm-6 animate__animated animate__fadeInLeft"
+          data-il8n="task"
+        >
+          <img :src="imageUrl" alt="" style="width: 100%; height: auto" />
+        </div>
       </div>
     </section>
-    <div class="join" data-il8n="join" id="sucess-section">
+    <div class="join hidden-section" data-il8n="join" id="sucess-section">
       <p>
         موثوق به من آلاف الموظفين في الشرق الأوسط.
         <a href=""><span>انضم اليهم</span></a>
       </p>
       <ImageSlider />
-      <h1 id="advantages-section">
+    </div>
+    <div class="data hidden-section" data-il8n="egyption">
+      <h1 class="container" id="  advantages-section">
         قم بإدارة فريقك بشكل
         <a href=""
           ><span>
@@ -62,7 +60,7 @@
         نعمل على تمكين الشركات من إدارة أعمالها باحترافية وتقديم أفضل تجربة
         أعمال لجميع عملاءنا من خلال برنامجنا الأفضل والأسهل استخداماً
       </p>
-      <div class="row data" data-il8n="egyption">
+      <div class="row">
         <div class="col-sm-3">
           <svg
             width="91"
@@ -214,7 +212,8 @@
         </div>
       </div>
     </div>
-    <div class="us" id="system-section">
+
+    <div class="us hidden-section" id="system-section">
       <h1>
         ركز على الاستراتيجية
         <a href=""
@@ -251,7 +250,7 @@
       </p>
       <sliderS />
     </div>
-    <div class="join" id="servies-section">
+    <div class="join hidden-section" id="servies-section">
       <h1>
         نقدم لكم العديد من
         <a href=""
@@ -278,7 +277,7 @@
         في إدارة موارد بشرية مُتكاملة تُساهم في تحسين كفاءة العمل وتقليل
         التكاليف وتعزيز رضا الموظفين.
       </p>
-      <div class="container serves">
+      <div class="container serves hidden-section">
         <div class="row">
           <div class="col-sm-6">
             <div class="white">
@@ -336,7 +335,7 @@
           </div>
         </div>
       </div>
-      <div class="row">
+      <div class="row hidden-section">
         <div class="col-sm-6">
           <img :src="imageUrl1" alt="" style="width: 86%" />
         </div>
@@ -427,7 +426,7 @@
           </router-link>
         </div>
       </div>
-      <div class="row">
+      <div class="row hidden-section">
         <div class="col-sm-6">
           <p style="color: #df8317; text-align: right">إدارة فريق العمل</p>
           <h1 style="text-align: right">تهيئة بيئة العمل لفريق فعّال</h1>
@@ -517,7 +516,7 @@
           <img :src="imageUrl2" alt="" style="width: 86%" />
         </div>
       </div>
-      <div class="row">
+      <div class="row hidden-section">
         <div class="col-sm-6">
           <img :src="imageUrl3" alt="" style="width: 86%" />
         </div>
@@ -626,7 +625,7 @@
           </router-link>
         </div>
       </div>
-      <div class="row">
+      <div class="row hidden-section">
         <div class="col-sm-6">
           <p style="color: #df8317; text-align: right">الخدمة الذاتية للموظف</p>
           <h1 style="text-align: right">إتاحة الخدمة الذاتية للموظفين</h1>
@@ -720,7 +719,7 @@
         </div>
       </div>
     </div>
-    <div class="All container">
+    <div class="All hidden-section container">
       <p style="color: #df8317; font-size: 20px">إدارة جميع الموارد البشرية</p>
       <h1>هل ترغب بتسهيل عمليات الموارد البشرية اليومية للموظفين في منشأتك؟</h1>
       <p>
@@ -754,6 +753,8 @@
 <script>
 import ImageSlider from '../common/ImageSlider.vue'
 import sliderS from '../common/sliderS.vue'
+import { onMounted } from 'vue'
+import ScrollReveal from 'scrollreveal'
 
 export default {
   name: 'ThePage',
@@ -767,18 +768,46 @@ export default {
       imageUrl4: require('@/assets/Group 1261152758.png'),
     }
   },
+  mounted() {
+    const scrollReveal = ScrollReveal({
+      reset: true,
+      mobile: true,
+      easing: 'ease-in-out',
+      duration: 800,
+      delay: 0,
+    })
+
+    scrollReveal.reveal('.hidden-section', {
+      origin: 'bottom',
+      distance: '50%',
+      duration: 1000,
+      opacity: 0,
+    })
+  },
 }
 </script>
 
 <style scoped>
+a:hover {
+  text-decoration: none;
+}
 .ThePage {
   text-align: right;
   overflow: hidden;
   width: 100%;
 }
 .header {
+  background-image: url('/src//assets/Header\ bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  top: 14;
+  padding-top: 6%;
+  height: calc(100vh -14vh);
+}
+.header .row {
   padding: 60px 160px 0;
-  background-color: #ffff;
 }
 h1 {
   font-size: 32px;
@@ -840,8 +869,25 @@ button:hover {
 
 .data {
   text-align: center;
-  margin-top: 80px;
+  padding: 10px 100px;
+  margin-bottom: 40px;
 }
+.data p {
+  text-align: center;
+  color: #1e1f4b;
+  font-size: 20px;
+  margin-bottom: 80px;
+}
+.data h1 {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 30px;
+}
+.data span {
+  background-color: #fbfdff;
+  color: #df8317;
+}
+
 .svg {
   text-align: center;
   margin-right: 40%;
@@ -866,7 +912,6 @@ button:hover {
 }
 .serves .row {
   margin-top: 20px;
-  margin-right: -8%;
 }
 .serves .col-sm-6 {
   height: 10%;
@@ -887,7 +932,7 @@ button:hover {
   background-color: #111c55;
   border-radius: 8px;
   color: #ffffff;
-  padding: 20px;
+  padding: 20px 40px;
   height: 180px;
 }
 .serves .white {
@@ -911,12 +956,13 @@ button:hover {
 
 .serves .blue:hover {
   color: #111c55;
-  background-color: #fbfdff;
+
+  background-color: #ffffff;
   box-shadow: 8px 8px 8px rgba(49, 49, 49, 0.717);
 }
 .serves .blue:hover p {
   color: #111c55;
-  background-color: #fbfdff;
+  background-color: #ffffff;
 }
 .serves .blue:hover h3 {
   color: #111c55;
@@ -951,6 +997,6 @@ button:hover {
 .All .button {
   text-align: center;
   padding-bottom: 40px;
-  height: 220px;
+  height: 120px;
 }
 </style>

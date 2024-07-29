@@ -102,14 +102,20 @@ export default {
   display: flex;
   text-align: center;
   justify-content: center;
-  top: 17px;
   color: #605895;
   width: 100%;
+  position: absolute;
+  top: 0;
+  height: 14vh;
+  z-index: 1000;
 }
 a {
   cursor: pointer;
   color: #605895;
   width: 20%;
+}
+a:hover {
+  text-decoration: none;
 }
 button {
   color: white;
@@ -130,7 +136,7 @@ ul {
 }
 li {
   display: inline-block;
-  margin-right: 20px;
+  margin-right: 16px;
 }
 .logo {
   width: 50%;
