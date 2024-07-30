@@ -23,19 +23,23 @@
           class="col-sm-6 animate__animated animate__fadeInLeft"
           data-il8n="task"
         >
-          <img :src="imageUrl" alt="" style="width: 100%; height: auto" />
+          <img
+            :src="imageUrl"
+            alt=""
+            style="width: 100%; height: auto; margin-top: 50px"
+          />
         </div>
       </div>
     </section>
     <div class="join hidden-section" data-il8n="join" id="sucess-section">
-      <p>
+      <p class="container">
         موثوق به من آلاف الموظفين في الشرق الأوسط.
         <a href=""><span>انضم اليهم</span></a>
       </p>
       <ImageSlider />
     </div>
     <div class="data hidden-section" data-il8n="egyption">
-      <h1 class="container" id="  advantages-section">
+      <h1 id="  advantages-section">
         قم بإدارة فريقك بشكل
         <a href=""
           ><span>
@@ -56,7 +60,7 @@
             </svg> </span
         ></a>
       </h1>
-      <p class="container" style="color: #696984; padding: 20px 180px">
+      <p class="container" style="color: #696984">
         نعمل على تمكين الشركات من إدارة أعمالها باحترافية وتقديم أفضل تجربة
         أعمال لجميع عملاءنا من خلال برنامجنا الأفضل والأسهل استخداماً
       </p>
@@ -213,7 +217,7 @@
       </div>
     </div>
 
-    <div class="us hidden-section" id="system-section">
+    <div class="us hidden-section" data-il8n="us" id="system-section">
       <h1>
         ركز على الاستراتيجية
         <a href=""
@@ -239,7 +243,7 @@
         class="container"
         style="
           color: #696984;
-          padding: 20px 180px 60px;
+
           text-align: center;
           font-size: 20px;
         "
@@ -250,8 +254,8 @@
       </p>
       <sliderS />
     </div>
-    <div class="join hidden-section" id="servies-section">
-      <h1>
+    <div class="join hidden-section">
+      <h1 class="container" data-il8n="join" id="servies-section">
         نقدم لكم العديد من
         <a href=""
           ><span>
@@ -272,14 +276,14 @@
             </svg> </span
         ></a>
       </h1>
-      <p class="container" style="color: #696984; padding: 20px 180px 0px">
+      <p class="container" style="color: #696984">
         بوابة نحو إدارة موارد بشرية مُتكاملة مع منصة HRM، يمكن للشركات الاستثمار
         في إدارة موارد بشرية مُتكاملة تُساهم في تحسين كفاءة العمل وتقليل
         التكاليف وتعزيز رضا الموظفين.
       </p>
       <div class="container serves hidden-section">
         <div class="row">
-          <div class="col-sm-6">
+          <div class="col-md-6 mb-4 order-2 order-md-1">
             <div class="white">
               <h3>إدارة الموظفين</h3>
               <p>
@@ -288,7 +292,7 @@
               </p>
             </div>
           </div>
-          <div class="col-sm-6">
+          <div class="col-md-6 mb-4 order-1 order-md-2">
             <div class="blue">
               <h3>الحضور والانصراف</h3>
               <p>
@@ -296,9 +300,7 @@
               </p>
             </div>
           </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-6">
+          <div class="col-md-6 mb-4 order-3 order-md-3">
             <div class="blue">
               <h3>إدارة الإجازات</h3>
               <p>
@@ -306,8 +308,7 @@
               </p>
             </div>
           </div>
-
-          <div class="col-sm-6">
+          <div class="col-md-6 mb-4 order-4 order-md-4">
             <div class="white">
               <h3>الخدمات الذاتية</h3>
               <p>
@@ -316,9 +317,7 @@
               </p>
             </div>
           </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-6">
+          <div class="col-md-6 mb-4 order-6 order-md-5">
             <div class="white">
               <h3>تصفية المستحقات</h3>
               <p>
@@ -326,8 +325,7 @@
               </p>
             </div>
           </div>
-
-          <div class="col-sm-6">
+          <div class="col-md-6 mb-4 order-5 order-md-6">
             <div class="blue">
               <h3>مسيرات الرواتب</h3>
               <p>إصدار المسيرات والملفات البنكية الخاصة بصرف الرواتب</p>
@@ -335,22 +333,16 @@
           </div>
         </div>
       </div>
-      <div class="row hidden-section">
+
+      <div class="row work hidden-section">
         <div class="col-sm-6">
-          <img :src="imageUrl1" alt="" style="width: 86%" />
+          <img :src="imageUrl1" alt="" />
         </div>
 
         <div class="col-sm-6">
           <p style="color: #df8317; text-align: right">قطاعات العمل</p>
           <h1 style="text-align: right">تبسيط مهام الموارد البشرية</h1>
-          <p
-            style="
-              color: #493f87;
-              font-size: 30px;
-              text-align: right;
-              margin-top: 30px;
-            "
-          >
+          <p class="span">
             <svg
               width="25"
               height="25"
@@ -373,7 +365,7 @@
             </svg>
             مهام سير عمل الموارد البشرية
           </p>
-          <p style="color: #493f87; font-size: 30px; text-align: right">
+          <p class="span">
             <svg
               width="25"
               height="25"
@@ -396,7 +388,7 @@
             </svg>
             تحسين مهارات التواصل في العمل
           </p>
-          <p style="color: #493f87; font-size: 30px; text-align: right">
+          <p class="span">
             <svg
               width="25"
               height="25"
@@ -426,18 +418,11 @@
           </router-link>
         </div>
       </div>
-      <div class="row hidden-section">
+      <div class="row work hidden-section">
         <div class="col-sm-6">
           <p style="color: #df8317; text-align: right">إدارة فريق العمل</p>
           <h1 style="text-align: right">تهيئة بيئة العمل لفريق فعّال</h1>
-          <p
-            style="
-              color: #493f87;
-              font-size: 30px;
-              text-align: right;
-              margin-top: 30px;
-            "
-          >
+          <p class="span">
             <svg
               width="25"
               height="25"
@@ -460,7 +445,7 @@
             </svg>
             متابعة مهام فريق العمل يوميا
           </p>
-          <p style="color: #493f87; font-size: 30px; text-align: right">
+          <p class="span">
             <svg
               width="25"
               height="25"
@@ -483,7 +468,7 @@
             </svg>
             تقييم أداء الموظفين بشكل دوري
           </p>
-          <p style="color: #493f87; font-size: 30px; text-align: right">
+          <p class="span">
             <svg
               width="25"
               height="25"
@@ -513,12 +498,12 @@
           </router-link>
         </div>
         <div class="col-sm-6">
-          <img :src="imageUrl2" alt="" style="width: 86%" />
+          <img :src="imageUrl2" alt="" />
         </div>
       </div>
-      <div class="row hidden-section">
+      <div class="row work hidden-section">
         <div class="col-sm-6">
-          <img :src="imageUrl3" alt="" style="width: 86%" />
+          <img :src="imageUrl3" alt="" />
         </div>
         <div class="col-sm-6">
           <p style="color: #df8317; text-align: right">
@@ -527,14 +512,7 @@
           <h1 style="text-align: right; padding: 0 10px">
             متابعة مواعيد الحضور والانصراف بشكل دوري
           </h1>
-          <p
-            style="
-              color: #493f87;
-              font-size: 30px;
-              text-align: right;
-              margin-top: 30px;
-            "
-          >
+          <p class="span">
             <svg
               width="25"
               height="25"
@@ -557,7 +535,7 @@
             </svg>
             كشف حضور وانصراف الموظفين عبر الهاتف
           </p>
-          <p style="color: #493f87; font-size: 30px; text-align: right">
+          <p class="span">
             <svg
               width="25"
               height="25"
@@ -580,7 +558,7 @@
             </svg>
             متابعة الإجازات والغياب وأوقات الخروج
           </p>
-          <p style="color: #493f87; font-size: 30px; text-align: right">
+          <p class="span">
             <svg
               width="25"
               height="25"
@@ -625,18 +603,11 @@
           </router-link>
         </div>
       </div>
-      <div class="row hidden-section">
+      <div class="row work hidden-section">
         <div class="col-sm-6">
           <p style="color: #df8317; text-align: right">الخدمة الذاتية للموظف</p>
           <h1 style="text-align: right">إتاحة الخدمة الذاتية للموظفين</h1>
-          <p
-            style="
-              color: #493f87;
-              font-size: 30px;
-              text-align: right;
-              margin-top: 30px;
-            "
-          >
+          <p class="span">
             <svg
               width="25"
               height="25"
@@ -659,7 +630,7 @@
             </svg>
             تتبع الوقت وتقارير الحضور والانصراف
           </p>
-          <p style="color: #493f87; font-size: 30px; text-align: right">
+          <p class="span">
             <svg
               width="25"
               height="25"
@@ -682,7 +653,7 @@
             </svg>
             تقديم طلبات الإجازات والأذونات.
           </p>
-          <p style="color: #493f87; font-size: 30px; text-align: right">
+          <p class="span">
             <svg
               width="25"
               height="25"
@@ -715,7 +686,7 @@
           </router-link>
         </div>
         <div class="col-sm-6">
-          <img :src="imageUrl4" alt="" style="width: 86%" />
+          <img :src="imageUrl4" alt="" />
         </div>
       </div>
     </div>
@@ -797,37 +768,42 @@ a:hover {
   width: 100%;
 }
 .header {
-  background-image: url('/src//assets/Header\ bg.jpg');
+  background-image: url('/src/assets/Header bg.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
-  top: 14;
-  padding-top: 6%;
-  height: calc(100vh -14vh);
+  height: calc(100vh - 200px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: right;
+  padding: 20px;
 }
 .header .row {
-  padding: 60px 160px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px 0;
 }
-h1 {
+
+.header h1 {
+  font-weight: bold;
   font-size: 32px;
   color: #111c55;
 }
-.header h1 {
-  background-color: white;
-  text-align: right;
-  font-weight: bold;
-  font-size: 40px;
-}
+
 .header p {
   color: #df8317;
   font-size: 20px;
 }
+
 .header .text {
   color: #757095;
   margin-top: 30px;
-  background: white;
 }
+
 button {
   background-color: #111c55;
   color: #e5e7f2;
@@ -836,37 +812,75 @@ button {
   border: none;
   margin-top: 30px;
   box-shadow: 8px 8px 8px rgba(205, 205, 205, 0.409);
+  transition: padding 0.3s, box-shadow 0.3s, font-size 0.3s;
 }
 button:hover {
   box-shadow: 8px 8px 8px rgba(49, 49, 49, 0.717);
   padding: 14px 50px;
   font-size: 20px;
 }
+@media (max-width: 480px) {
+  .header {
+    height: auto;
+    padding: 10px;
+  }
+
+  .header h1 {
+    font-size: 20px;
+  }
+
+  .header p,
+  .header .text {
+    font-size: 14px;
+  }
+
+  button {
+    padding: 8px 30px;
+    font-size: 14px;
+  }
+}
+
 .join {
   background-color: #fbfdff;
   padding: 60px 100px;
   margin-bottom: 40px;
 }
 .join p {
-  background-color: #fbfdff;
   text-align: center;
   color: #1e1f4b;
   font-size: 20px;
 }
 .join h1 {
-  background-color: #fbfdff;
   text-align: center;
   font-weight: bold;
   margin-top: 30px;
 }
 .join span {
-  background-color: #fbfdff;
   color: #df8317;
 }
+@media (max-width: 768px) {
+  .join {
+    padding: 30px 20px; /* Reduce padding for smaller screens */
+    margin-bottom: 20px; /* Adjust margin for better spacing */
+  }
+
+  .join p {
+    font-size: 16px;
+    padding: 10px;
+  }
+  .data h1 {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .join span {
+    font-size: 14px; /* Adjust font size if needed */
+  }
+}
+
 .VueCarousel-wrapper {
   background-color: #fbfdff !important;
 }
-
 .data {
   text-align: center;
   padding: 10px 100px;
@@ -887,6 +901,50 @@ button:hover {
   background-color: #fbfdff;
   color: #df8317;
 }
+@media (max-width: 767px) {
+  .container {
+    padding: 20px;
+  }
+
+  .data h1 {
+    font-size: 24px;
+    text-align: center;
+  }
+  .data svg {
+    height: 30px;
+  }
+
+  .data p {
+    font-size: 16px; /* حجم النص في الفقرات */
+    padding: 10px 0;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .col-sm-3,
+  .col-sm-1.5 {
+    margin: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .svg {
+    margin: 10px auto;
+  }
+
+  svg {
+    width: 50px; /* حجم الرموز */
+    height: 50px;
+  }
+
+  .hidden-section {
+    display: block; /* عرض القسم المخفي على الشاشات الصغيرة */
+  }
+}
 
 .svg {
   text-align: center;
@@ -905,6 +963,84 @@ button:hover {
 .us span {
   color: #df8317;
 }
+@media (max-width: 768px) {
+  .container {
+    padding: 20px;
+  }
+  .us {
+    padding: 30px 20px; /* تقليل الهوامش الداخلية على الشاشات الصغيرة */
+  }
+
+  .us h1 {
+    font-size: 24px; /* تصغير حجم النص */
+    padding-bottom: 10px; /* زيادة المسافة أسفل العنوان */
+  }
+
+  .us p {
+    font-size: 16px; /* تصغير حجم الخط للنص */
+    padding: 0 10px; /* إضافة هوامش على الجوانب */
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 20px;
+  }
+  .us {
+    padding: 20px 10px; /* تقليل الهوامش الداخلية بشكل أكبر */
+  }
+
+  .us h1 {
+    font-size: 20px; /* تصغير حجم النص بشكل أكبر */
+  }
+
+  .us p {
+    font-size: 14px; /* تصغير حجم الخط بشكل أكبر */
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 20px;
+  }
+  .join {
+    padding: 10px;
+  }
+
+  .join h1 {
+    font-size: 1.5em;
+    text-align: center;
+  }
+
+  .join .container {
+    padding: 0;
+  }
+
+  .join .row {
+    flex-direction: column;
+  }
+
+  .join .col-sm-6 {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+
+  .join .col-sm-6 img {
+    width: 100%;
+  }
+
+  .join p {
+    font-size: 1em;
+    text-align: center;
+  }
+
+  .join .button {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+  }
+}
 .serves {
   text-align: right;
   padding: 40px 80px;
@@ -913,8 +1049,9 @@ button:hover {
 .serves .row {
   margin-top: 20px;
 }
-.serves .col-sm-6 {
-  height: 10%;
+.serves .col-md-6,
+.serves .col-12 {
+  height: auto;
 }
 .serves p {
   margin-top: 25px;
@@ -953,10 +1090,8 @@ button:hover {
   text-align: right;
   color: #ffffff;
 }
-
 .serves .blue:hover {
   color: #111c55;
-
   background-color: #ffffff;
   box-shadow: 8px 8px 8px rgba(49, 49, 49, 0.717);
 }
@@ -979,9 +1114,84 @@ button:hover {
 .serves .white:hover h3 {
   color: #f9fcff;
 }
+
+/* تنسيق للشاشات الصغيرة */
+@media (max-width: 768px) {
+  .container {
+    padding: 20px;
+  }
+  .serves {
+    padding: 20px;
+    margin-bottom: 30px;
+  }
+  .serves .row {
+    margin-top: 10px;
+  }
+  .serves .col-6 {
+    margin-bottom: 10px;
+  }
+  .serves .blue,
+  .serves .white {
+    padding: 15px;
+    height: auto;
+    width: 80%;
+    max-width: 80%;
+    box-sizing: border-box; /* لضمان احتساب padding ضمن العرض الإجمالي */
+    margin: 0 auto; /* توسيط العناصر أفقيا */
+  }
+  .serves h1 {
+    font-size: 24px;
+  }
+  .serves h3 {
+    font-size: 20px;
+  }
+  .serves p {
+    font-size: 16px;
+  }
+}
+
+.work p,
+.work h1 {
+  text-align: right;
+  margin-top: 2rem;
+}
+
+.work p svg {
+  margin-left: 10px;
+  vertical-align: middle;
+}
+
+.work h1 {
+  font-size: 2.3rem;
+  color: #111c55;
+}
+
+@media (max-width: 768px) {
+  .work {
+    grid-template-columns: 1fr;
+    padding: 0 30px 0 0;
+  }
+
+  .work .span,
+  .work h1 {
+    font-size: 1rem;
+    margin-top: 0rem;
+  }
+  .work svg {
+    height: 15px;
+    width: 15px;
+  }
+  .work .span {
+    margin-right: -30px;
+    padding: 0 30px 0 0;
+  }
+  .work h1 {
+    font-size: 1.5rem;
+  }
+}
+
 .All {
   align-items: center;
-  padding: 0 180px;
 }
 .All h1 {
   text-align: center;
@@ -998,5 +1208,20 @@ button:hover {
   text-align: center;
   padding-bottom: 40px;
   height: 120px;
+}
+@media (max-width: 600px) {
+  .All h1 {
+    font-size: 1.2rem;
+    padding: 0 20px;
+  }
+
+  .All p {
+    font-size: 0.9rem;
+  }
+
+  .All button {
+    font-size: 0.9rem;
+    padding: 8px 16px; /* حجم التباعد الداخلي للأزرار على الشاشات الصغيرة */
+  }
 }
 </style>

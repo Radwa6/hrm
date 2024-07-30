@@ -40,7 +40,4 @@ export default {
   background-color: #fbfdff;
   overflow: hidden;
 }
-.NavBar {
-  padding: 30px 0;
-}
 </style>
