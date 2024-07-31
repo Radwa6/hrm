@@ -59,26 +59,22 @@ export default {
   width: 100%;
   height: 120px;
 }
-
 .carousel {
   width: 100%;
   height: 100%;
 }
-
 .carousel-inner {
   width: 100%;
   height: 100%;
   overflow: hidden;
   position: relative;
 }
-
 .carousel-content {
   display: flex;
   width: calc(100% * 2);
   height: 100%;
   animation: scroll 20s linear infinite;
 }
-
 .slide {
   flex: 0 0 auto;
   display: flex;
@@ -88,12 +84,10 @@ export default {
   height: 100%;
   margin-right: 80px;
 }
-
 .slide img {
   width: 100%;
   height: auto;
 }
-
 @keyframes scroll {
   0% {
     transform: translateX(0);
@@ -106,12 +100,10 @@ export default {
   .carousel-wrapper {
     height: 100px;
   }
-
   .slide {
     width: 120px;
     margin-right: 10px;
   }
-
   @keyframes scroll {
     0% {
       transform: translateX(0);
@@ -121,23 +113,20 @@ export default {
     }
   }
 }
-
 @media (max-width: 480px) {
   .carousel-wrapper {
     height: 80px;
   }
-
   .slide {
     width: 100px;
     margin-right: 5px;
   }
-
   @keyframes scroll {
     0% {
-      transform: translateX(0);
+      transform: translateX(50%);
     }
     100% {
-      transform: translateX(-70%);
+      transform: translateX(-100%);
     }
   }
 }

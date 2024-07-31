@@ -2,7 +2,9 @@
   <div class="TheFooter" dir="rtl">
     <div class="row">
       <div class="col-sm-3" style="margin-bottom: 60px">
-        <img :src="imageUrl" alt="image" />
+        <router-link to="/ThePage">
+          <img :src="imageUrl" alt="image" />
+        </router-link>
         <p style="margin: 40px 0">
           ارفع نسب الإنجاز في إدارتك الآن عبر منصتنا حيث نوفر لكم يوفر لك حلاً
           قويًا لكل ما يخص عمليـات إدارة الموارد البشرية
@@ -16,9 +18,24 @@
           <router-link to="/ThePage" active-class="active-link">
             <li>الرئيسية</li>
           </router-link>
-          <li>شركاء النجاح</li>
-          <li>خدماتنا</li>
-          <li>عن النظام</li>
+          <router-link
+            :to="{ path: '/ThePage', hash: '#sucess-section' }"
+            active-class="active-link"
+          >
+            <li>شركاء النجاح</li>
+          </router-link>
+          <router-link
+            :to="{ path: '/ThePage', hash: '#servies-section' }"
+            active-class="active-link"
+          >
+            <li>خدماتنا</li>
+          </router-link>
+          <router-link
+            :to="{ path: '/ThePage', hash: '#system-section' }"
+            active-class="active-link"
+          >
+            <li>النظام</li>
+          </router-link>
         </ul>
       </div>
       <div class="col-sm-3" style="margin-bottom: 60px">
@@ -192,7 +209,7 @@ li {
   margin-top: 10px;
   margin-left: 10px;
 }
-.active-link {
+.active-link li {
   color: #df8317;
 }
 </style>

@@ -747,7 +747,6 @@ export default {
       duration: 800,
       delay: 0,
     })
-
     scrollReveal.reveal('.hidden-section', {
       origin: 'bottom',
       distance: '50%',
@@ -779,23 +778,19 @@ a:hover {
   padding: 80px 180px;
   align-items: center;
 }
-
 .header h1 {
   font-weight: bold;
   font-size: 32px;
   color: #111c55;
 }
-
 .header p {
   color: #df8317;
   font-size: 20px;
 }
-
 .header .text {
   color: #757095;
   margin-top: 30px;
 }
-
 button {
   background-color: #111c55;
   color: #e5e7f2;
@@ -836,6 +831,7 @@ button:hover {
   }
 }
 
+/*join*/
 .join {
   background-color: #fbfdff;
   padding: 60px 100px;
@@ -877,6 +873,8 @@ button:hover {
 .VueCarousel-wrapper {
   background-color: #fbfdff !important;
 }
+
+/*data*/
 .data {
   text-align: center;
   padding: 10px 100px;
@@ -938,19 +936,16 @@ button:hover {
     margin-bottom: 60px;
   }
 }
-
 .svg {
   margin: 10px auto;
+  text-align: center;
+  margin-right: 40%;
 }
-
 .hidden-section {
   display: block;
 }
 
-.svg {
-  text-align: center;
-  margin-right: 40%;
-}
+/*us*/
 .us {
   background-color: #f9fcff;
   padding: 50px 100px;
@@ -982,7 +977,6 @@ button:hover {
     padding: 0 10px;
   }
 }
-
 @media (max-width: 480px) {
   .container {
     padding: 20px;
@@ -999,7 +993,6 @@ button:hover {
     font-size: 14px;
   }
 }
-
 @media (max-width: 768px) {
   .container {
     padding: 20px;
@@ -1042,6 +1035,8 @@ button:hover {
     margin-top: 20px;
   }
 }
+
+/*serves*/
 .serves {
   text-align: right;
   padding: 40px 80px;
@@ -1113,7 +1108,6 @@ button:hover {
 .serves .white:hover h3 {
   color: #f9fcff;
 }
-
 @media (max-width: 768px) {
   .container {
     padding: 20px;
@@ -1147,6 +1141,8 @@ button:hover {
     font-size: 16px;
   }
 }
+
+/*work*/
 .work {
   margin-bottom: 60px;
 }
@@ -1158,17 +1154,14 @@ button:hover {
   text-align: right;
   margin-top: 2rem;
 }
-
 .work p svg {
   margin-left: 10px;
   vertical-align: middle;
 }
-
 .work h1 {
   font-size: 2.3rem;
   color: #111c55;
 }
-
 @media (max-width: 768px) {
   .work {
     grid-template-columns: 1fr;
@@ -1196,6 +1189,7 @@ button:hover {
   }
 }
 
+/*All*/
 .All {
   align-items: center;
 }

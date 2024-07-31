@@ -187,7 +187,6 @@ a :hover {
   -ms-flex-pack: justify;
   justify-content: space-between;
 }
-
 .menu-area {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -224,8 +223,9 @@ a :hover {
   color: white;
   background-color: #e89739;
   padding: 5px;
-  width: 100px;
-  height: 44px;
+  width: 160px;
+
+  height: 46px;
   border-radius: 80px;
   border: none;
 }
@@ -282,7 +282,6 @@ a :hover {
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-
 .sub {
   display: none;
   -webkit-transition: all 0.3s ease-out;
@@ -297,7 +296,6 @@ a :hover {
   -webkit-box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
 }
-
 .mega {
   display: none;
   -webkit-transition: all 0.3s ease-out;
@@ -314,7 +312,6 @@ a :hover {
   -webkit-box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
 }
-
 .menu-area li:hover .sub {
   display: block;
   -webkit-transition: all 0.3s ease-out;
@@ -327,7 +324,6 @@ a :hover {
   -o-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
 }
-
 .mega-menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -342,13 +338,11 @@ a :hover {
 .mega-item {
   width: 25%;
 }
-
 .mega-item h3 {
   font-size: 18px;
   line-height: 1.3;
   font-weight: 600;
 }
-
 .mega-menu li {
   display: block;
 }
@@ -356,7 +350,6 @@ a :hover {
   display: inline-block;
   padding: 8px 0;
 }
-
 .mobilebtn {
   display: none;
   background-color: rgba(255, 255, 255, 0.472);
@@ -364,7 +357,6 @@ a :hover {
 .navigation button {
   border: none;
 }
-
 @media (max-width: 1199.98px) {
   .logo {
     margin-right: -60px;
@@ -503,7 +495,6 @@ a :hover {
     width: 33.33%;
   }
 }
-
 @media (max-width: 991.98px) {
   .header-area {
     padding: 10px 40px;
@@ -516,7 +507,6 @@ a :hover {
     overflow-y: scroll;
   }
 }
-
 @media (max-width: 767.98px) {
   .header-area {
     padding: 10px 40px;
@@ -525,7 +515,6 @@ a :hover {
     width: 100%;
   }
 }
-
 a {
   color: white;
   padding: 10px 20px;
@@ -536,7 +525,6 @@ a {
   width: 20%;
   color: #111c55;
 }
-
 .logo img {
   max-width: 100%;
   height: auto;
@@ -549,7 +537,6 @@ a {
   height: 80%;
   z-index: -10;
 }
-
 .active-link li {
   color: #df8317;
 }

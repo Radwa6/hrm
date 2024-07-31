@@ -1,6 +1,6 @@
 <template>
   <div class="row logIn" dir="rtl">
-    <div class="col-sm-4" style="background-color: #111c55; z-index: 10">
+    <div class="col-1 col-md-4" style="background-color: #111c55; z-index: 10">
       <div
         style="
           background-color: white;
@@ -16,7 +16,7 @@
     </div>
 
     <div
-      class="col-sm-8"
+      class="col-11 col-md-8"
       style="background-color: white; padding: 20px; z-index: 1"
     >
       <div class="row navlogo d-flex justify-content-between">
@@ -123,10 +123,12 @@ export default {
 h1 {
   color: #000842;
   font-weight: bold;
+  margin-bottom: 10px;
 }
 p {
   color: #637381;
   font-size: 20px;
+  margin-bottom: 40px;
 }
 
 label {
@@ -201,6 +203,7 @@ button {
   p {
     font-size: 18px;
     margin-top: 5px;
+    padding-left: 30px;
   }
   .navlogo {
     padding: 30px 60px 0 40px;

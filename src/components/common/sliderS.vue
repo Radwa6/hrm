@@ -31,7 +31,6 @@ import Swiper, {
 import 'swiper/swiper-bundle.min.css'
 
 Swiper.use([Navigation, Autoplay, EffectCoverflow, Pagination])
-
 export default {
   name: 'SliderS',
   mounted() {
@@ -95,7 +94,6 @@ export default {
   border-radius: 50%;
   box-shadow: none;
 }
-
 @media (max-width: 768px) {
   .swiper-slide img {
     height: 40vh;
@@ -105,7 +103,6 @@ export default {
     height: 30vh;
   }
 }
-
 @media (max-width: 480px) {
   .swiper-slide img {
     height: 30vh;

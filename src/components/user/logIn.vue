@@ -1,13 +1,13 @@
 <template>
-  <div class="row logIn" dir="rtl">
-    <div class="col-sm-4" style="background-color: #111c55; z-index: 10">
+  <div class="row flex-row logIn" dir="rtl">
+    <div class="col-1 col-md-4" style="background-color: #111c55; z-index: 10">
       <div
         style="
           background-color: white;
           border-radius: 10px;
           z-index: 10;
           height: 80%;
-          width: 90%;
+          width: 100%;
           margin: 20%;
         "
       >
@@ -16,7 +16,7 @@
     </div>
 
     <div
-      class="col-sm-8"
+      class="col-11 col-md-8"
       style="background-color: white; padding: 20px; z-index: 1"
     >
       <div class="row navlogo d-flex justify-content-between">
@@ -120,7 +120,7 @@
           </div>
           <br />
           <button type="submit">تسجيل الدخول</button>
-          <p style="margin-top: 40px">
+          <p style="margin-top: 10px; padding: 0 20px">
             ليس لديك حساب ؟
             <a style="color: #111c55; font-weight: bold">انضم الينا الان </a>
           </p>
@@ -263,7 +263,7 @@ button {
   textarea,
   button {
     width: 70%;
-    margin: 10px auto;
+    margin: 5px auto;
   }
 
   .nav {
@@ -280,13 +280,13 @@ button {
   }
 
   h1 {
-    font-size: 24px;
-    margin-top: 10px;
+    font-size: 22px;
+    margin-top: 20px;
   }
 
   p {
-    font-size: 18px;
-    margin-top: 5px;
+    font-size: 16px;
+    margin-top: 10px;
   }
   .password-container span svg {
     right: -24px;
@@ -295,6 +295,7 @@ button {
   }
   .navlogo {
     padding: 0 40px 0 30px;
+    height: 50px;
   }
 }
 </style>
