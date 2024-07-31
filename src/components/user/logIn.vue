@@ -43,7 +43,7 @@
           </router-link>
         </div>
       </div>
-      <div class="row" style="text-align: right; margin-right: 20%">
+      <div class="row with">
         <h1>مرحبا بعودتك ؟!</h1>
         <p>أدخل بيانات حسابك وتابع مشروعك الان</p>
         <form @submit.prevent="handleSubmit" class="login-form">
@@ -249,7 +249,15 @@ button {
 .navlogo {
   padding: 0 40px 0 160px;
 }
+.with {
+  text-align: right;
+  margin-right: 26%;
+}
 @media (max-width: 768px) {
+  .with {
+    text-align: right;
+    margin-right: 16%;
+  }
   .imageUrl {
     width: 100%;
     margin-left: 0;

@@ -43,7 +43,7 @@
           </router-link>
         </div>
       </div>
-      <div class="row" style="text-align: right; margin-right: 26%">
+      <div class="row with">
         <div>
           <h1>تواصل معانا ؟!</h1>
           <p>نحن علي اتم الاستعداد لمساعدتك دائما</p>
@@ -162,7 +162,15 @@ button {
 .navlogo {
   padding: 0 40px 0 160px;
 }
+.with {
+  text-align: right;
+  margin-right: 26%;
+}
 @media (max-width: 768px) {
+  .with {
+    text-align: right;
+    margin-right: 16%;
+  }
   .col-sm-4,
   .col-sm-8 {
     width: 100% !important;
