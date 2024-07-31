@@ -1,20 +1,13 @@
 <template>
   <div class="row logIn" dir="rtl">
-    <div
-      class="col-sm-4"
-      style="
-        background-color: #111c55;
-        height: 100%;
-        padding-bottom: 40px;
-        z-index: 10;
-      "
-    >
+    <div class="col-sm-4" style="background-color: #111c55; z-index: 10">
       <div
         style="
           background-color: white;
           border-radius: 10px;
           z-index: 10;
           height: 80%;
+          width: 90%;
           margin: 20%;
         "
       >
@@ -24,10 +17,10 @@
 
     <div
       class="col-sm-8"
-      style="background-color: white; padding: 20px 0; z-index: 1"
+      style="background-color: white; padding: 20px; z-index: 1"
     >
-      <div class="row">
-        <div class="col-sm-4 nav">
+      <div class="row navlogo d-flex justify-content-between">
+        <div class="nav">
           <a href="">
             <svg
               width="35"
@@ -43,8 +36,8 @@
             </svg>
           </a>
         </div>
-        <div class="col-sm-4"></div>
-        <div class="col-sm-4 logo">
+
+        <div class="logo">
           <router-link to="/ThePage">
             <img :src="imageUrl0" alt="image" />
           </router-link>
@@ -127,7 +120,7 @@
           </div>
           <br />
           <button type="submit">تسجيل الدخول</button>
-          <p style="margin-right: 10%; margin-top: 40px">
+          <p style="margin-top: 40px">
             ليس لديك حساب ؟
             <a style="color: #111c55; font-weight: bold">انضم الينا الان </a>
           </p>
@@ -169,61 +162,54 @@ export default {
 }
 </script>
 <style scoped>
-* {
-  padding: 0;
-  margin: 0;
-  width: 100%;
-}
 .logIn {
   margin-top: 0;
 }
 .imageUrl {
+  width: 120%;
   margin-top: 30%;
   z-index: 200;
-  margin-left: -50%;
+  margin-left: -40%;
 }
 
 .nav {
-  margin-right: -10%;
-  display: inline;
+  margin-bottom: 60px;
 }
-.nav svg {
-  display: inline;
+
+.login-form {
+  width: 100%;
 }
-.logo img {
-  width: 40%;
-  height: auto;
-}
-.col-sm-2 a {
-  margin-right: -100%;
-  display: inline;
-}
-.col-sm-2 svg {
-  display: inline;
-}
+
 h1 {
   color: #000842;
   font-weight: bold;
   margin-top: 20px;
+  width: 100%;
 }
 p {
   color: #637381;
   font-size: 20px;
   margin-top: 10px;
+  width: 100%;
 }
 form {
   margin-top: 40px;
 }
 
+label {
+  width: 100%;
+}
 input {
-  width: 50%;
+  width: 80%;
   padding: 10px;
   margin-top: 10px;
+  margin-bottom: 40px;
+
   border: 1px solid #9898984a;
   border-radius: 10px;
 }
 button {
-  width: 50%;
+  width: 80%;
   padding: 10px;
   margin-top: 10px;
   border-radius: 10px;
@@ -234,12 +220,10 @@ button {
 .password-container {
   align-items: center;
   position: relative;
-  width: 100%;
 }
 
 .password-container span {
   position: absolute;
-
   cursor: pointer;
 }
 .password-container span svg {
@@ -256,9 +240,61 @@ button {
   justify-content: space-between;
 }
 .form-group a {
-  margin-left: 24%;
+  width: 50%;
 }
 .form-check .form-check-input {
-  margin-right: -18%;
+  margin-right: -40%;
+  margin-top: 5%;
+}
+.navlogo {
+  padding: 0 40px 0 160px;
+}
+@media (max-width: 768px) {
+  .imageUrl {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .logo img {
+    width: 60%;
+  }
+
+  input,
+  textarea,
+  button {
+    width: 70%;
+    margin: 10px auto;
+  }
+
+  .nav {
+    margin-right: 0;
+    text-align: center;
+  }
+
+  .nav svg {
+    width: 25px;
+    height: 25px;
+  }
+  .form-group a {
+    width: 150%;
+  }
+
+  h1 {
+    font-size: 24px;
+    margin-top: 10px;
+  }
+
+  p {
+    font-size: 18px;
+    margin-top: 5px;
+  }
+  .password-container span svg {
+    right: -24px;
+    margin-top: 190%;
+    transform: translateY(-50%);
+  }
+  .navlogo {
+    padding: 0 40px 0 30px;
+  }
 }
 </style>

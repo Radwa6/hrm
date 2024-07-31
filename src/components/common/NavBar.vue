@@ -24,16 +24,6 @@
                           d="M0 17H30V19H0zM0 25H30V27H0z"
                           transform="translate(-1376 -48) translate(1376 48)"
                         />
-                        <text
-                          font-family="Poppins"
-                          sans-serif
-                          font-size="10"
-                          font-weight="500"
-                          letter-spacing=".2"
-                          transform="translate(-1376 -48) translate(1376 48)"
-                        >
-                          <tspan x=".115" y="10">MENU</tspan>
-                        </text>
                       </g>
                     </g>
                   </g>
@@ -78,7 +68,7 @@
                   </router-link>
                 </ul>
                 <router-link to="/Contact">
-                  <button style="padding-right: 18px">تواصل معنا</button>
+                  <button>تواصل معنا</button>
                 </router-link>
 
                 <router-link to="/logIn" style="padding-right: 18px">
@@ -228,19 +218,21 @@ a :hover {
 .menu-area button {
   color: white;
   background-color: #e89739;
-  padding: 0 5px;
-  width: 150px;
+  padding: 5px;
+  width: 100px;
   height: 44px;
   border-radius: 80px;
   border: none;
 }
 .menu-area li {
   display: inline-block;
+  color: #605895;
 }
 .menu-area li a {
   display: inline-block;
   padding: 10px 15px;
-  font-size: 16px;
+  color: #605895;
+  font-size: 18px;
   line-height: 1.5;
   font-weight: 500;
   color: #000;
@@ -248,7 +240,10 @@ a :hover {
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-
+.menu-area a {
+  color: #605895;
+  font-size: 18px;
+}
 .subIocn {
   position: relative;
   display: inline-block;
@@ -359,6 +354,7 @@ a :hover {
 
 .mobilebtn {
   display: none;
+  background-color: white;
 }
 .navigation button {
   border: none;
@@ -366,18 +362,26 @@ a :hover {
 
 @media (max-width: 1199.98px) {
   .logo {
+    margin-right: -60px;
     width: auto;
     font-size: 20px;
     font-weight: 600;
   }
   .mobilebtn {
     display: block;
+    background-color: white;
   }
   .menu-area {
     display: none;
     -webkit-transition: all 0.3s ease-out;
     -o-transition: all 0.3s ease-out;
     transition: all 0.3s ease-out;
+  }
+  .menu-area.show button {
+    width: 100%;
+  }
+  .menu-area.show a {
+    width: 100%;
   }
   .menu-area.show {
     display: -webkit-box;

@@ -1,101 +1,97 @@
 <template>
-  <div
-    class="TeamManagement justify-content-center"
-    dir="rtl"
-    data-aos-easing="ease-in-out"
-    data-aos-duration="1000"
-    data-aos-delay="0"
-  >
-    <div class="header row">
-      <div
-        class="col-sm-6 animate__animated animate__fadeInDown"
-        data-il8n="task"
-      >
-        <p style="color: #df8317">قطاعات العمل</p>
-        <h1>تبسيط مهام الموارد البشرية</h1>
-        <span
-          ><svg
-            width="25"
-            height="25"
-            viewBox="0 0 25 25"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M12.1056 21.3513C14.1878 21.3513 16.2055 20.6293 17.8151 19.3084C19.4246 17.9874 20.5264 16.1493 20.9326 14.1071C21.3388 12.0649 21.0243 9.94501 20.0427 8.10869C19.0612 6.27236 17.4733 4.83319 15.5496 4.03638C13.6259 3.23957 11.4854 3.13443 9.49286 3.73888C7.50033 4.34332 5.77902 5.61995 4.62222 7.35124C3.46543 9.08253 2.94472 11.1614 3.14883 13.2335C3.35293 15.3057 4.26922 17.243 5.74156 18.7153"
-              stroke="#DF8317"
-              stroke-width="2"
-              stroke-linecap="round"
-            />
-            <path
-              d="M16.1055 10.3513L12.5075 14.6693C11.8525 15.4553 11.5245 15.8493 11.0835 15.8693C10.6435 15.8893 10.2805 15.5263 9.55647 14.8023L8.10547 13.3513"
-              stroke="#DF8317"
-              stroke-width="2"
-              stroke-linecap="round"
-            />
-          </svg>
-          <p>مهام سير عمل الموارد البشرية</p></span
+  <div class="TeamManagement justify-content-center" dir="rtl">
+    <div class="header">
+      <div class="row d-flex align-items-center">
+        <div
+          class="col-sm-6 animate__animated animate__fadeInDown"
+          data-il8n="task"
         >
-        <span
-          ><svg
-            width="25"
-            height="25"
-            viewBox="0 0 25 25"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
+          <p style="color: #df8317">قطاعات العمل</p>
+          <h1>تبسيط مهام الموارد البشرية</h1>
+          <span
+            ><svg
+              width="25"
+              height="25"
+              viewBox="0 0 25 25"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12.1056 21.3513C14.1878 21.3513 16.2055 20.6293 17.8151 19.3084C19.4246 17.9874 20.5264 16.1493 20.9326 14.1071C21.3388 12.0649 21.0243 9.94501 20.0427 8.10869C19.0612 6.27236 17.4733 4.83319 15.5496 4.03638C13.6259 3.23957 11.4854 3.13443 9.49286 3.73888C7.50033 4.34332 5.77902 5.61995 4.62222 7.35124C3.46543 9.08253 2.94472 11.1614 3.14883 13.2335C3.35293 15.3057 4.26922 17.243 5.74156 18.7153"
+                stroke="#DF8317"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+              <path
+                d="M16.1055 10.3513L12.5075 14.6693C11.8525 15.4553 11.5245 15.8493 11.0835 15.8693C10.6435 15.8893 10.2805 15.5263 9.55647 14.8023L8.10547 13.3513"
+                stroke="#DF8317"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+            </svg>
+            <p>مهام سير عمل الموارد البشرية</p></span
           >
-            <path
-              d="M12.1056 21.3513C14.1878 21.3513 16.2055 20.6293 17.8151 19.3084C19.4246 17.9874 20.5264 16.1493 20.9326 14.1071C21.3388 12.0649 21.0243 9.94501 20.0427 8.10869C19.0612 6.27236 17.4733 4.83319 15.5496 4.03638C13.6259 3.23957 11.4854 3.13443 9.49286 3.73888C7.50033 4.34332 5.77902 5.61995 4.62222 7.35124C3.46543 9.08253 2.94472 11.1614 3.14883 13.2335C3.35293 15.3057 4.26922 17.243 5.74156 18.7153"
-              stroke="#DF8317"
-              stroke-width="2"
-              stroke-linecap="round"
-            />
-            <path
-              d="M16.1055 10.3513L12.5075 14.6693C11.8525 15.4553 11.5245 15.8493 11.0835 15.8693C10.6435 15.8893 10.2805 15.5263 9.55647 14.8023L8.10547 13.3513"
-              stroke="#DF8317"
-              stroke-width="2"
-              stroke-linecap="round"
-            />
-          </svg>
-          <p>تحسين مهارات التواصل في العمل</p></span
+          <span
+            ><svg
+              width="25"
+              height="25"
+              viewBox="0 0 25 25"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12.1056 21.3513C14.1878 21.3513 16.2055 20.6293 17.8151 19.3084C19.4246 17.9874 20.5264 16.1493 20.9326 14.1071C21.3388 12.0649 21.0243 9.94501 20.0427 8.10869C19.0612 6.27236 17.4733 4.83319 15.5496 4.03638C13.6259 3.23957 11.4854 3.13443 9.49286 3.73888C7.50033 4.34332 5.77902 5.61995 4.62222 7.35124C3.46543 9.08253 2.94472 11.1614 3.14883 13.2335C3.35293 15.3057 4.26922 17.243 5.74156 18.7153"
+                stroke="#DF8317"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+              <path
+                d="M16.1055 10.3513L12.5075 14.6693C11.8525 15.4553 11.5245 15.8493 11.0835 15.8693C10.6435 15.8893 10.2805 15.5263 9.55647 14.8023L8.10547 13.3513"
+                stroke="#DF8317"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+            </svg>
+            <p>تحسين مهارات التواصل في العمل</p></span
+          >
+          <span
+            ><svg
+              width="25"
+              height="25"
+              viewBox="0 0 25 25"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12.1056 21.3513C14.1878 21.3513 16.2055 20.6293 17.8151 19.3084C19.4246 17.9874 20.5264 16.1493 20.9326 14.1071C21.3388 12.0649 21.0243 9.94501 20.0427 8.10869C19.0612 6.27236 17.4733 4.83319 15.5496 4.03638C13.6259 3.23957 11.4854 3.13443 9.49286 3.73888C7.50033 4.34332 5.77902 5.61995 4.62222 7.35124C3.46543 9.08253 2.94472 11.1614 3.14883 13.2335C3.35293 15.3057 4.26922 17.243 5.74156 18.7153"
+                stroke="#DF8317"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+              <path
+                d="M16.1055 10.3513L12.5075 14.6693C11.8525 15.4553 11.5245 15.8493 11.0835 15.8693C10.6435 15.8893 10.2805 15.5263 9.55647 14.8023L8.10547 13.3513"
+                stroke="#DF8317"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+            </svg>
+            <p>متابعة التقارير الخاصة بالموظفين</p>
+          </span>
+          <router-link to="/Contact">
+            <button
+              data-v-2645c328=""
+              style="margin-top: 40px; padding: 12px 10px"
+            >
+              أبدا نسختك التجريبة الان
+            </button>
+          </router-link>
+        </div>
+        <div
+          class="col-sm-6 animate__animated animate__fadeInLeft"
+          data-il8n="task"
         >
-        <span
-          ><svg
-            width="25"
-            height="25"
-            viewBox="0 0 25 25"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M12.1056 21.3513C14.1878 21.3513 16.2055 20.6293 17.8151 19.3084C19.4246 17.9874 20.5264 16.1493 20.9326 14.1071C21.3388 12.0649 21.0243 9.94501 20.0427 8.10869C19.0612 6.27236 17.4733 4.83319 15.5496 4.03638C13.6259 3.23957 11.4854 3.13443 9.49286 3.73888C7.50033 4.34332 5.77902 5.61995 4.62222 7.35124C3.46543 9.08253 2.94472 11.1614 3.14883 13.2335C3.35293 15.3057 4.26922 17.243 5.74156 18.7153"
-              stroke="#DF8317"
-              stroke-width="2"
-              stroke-linecap="round"
-            />
-            <path
-              d="M16.1055 10.3513L12.5075 14.6693C11.8525 15.4553 11.5245 15.8493 11.0835 15.8693C10.6435 15.8893 10.2805 15.5263 9.55647 14.8023L8.10547 13.3513"
-              stroke="#DF8317"
-              stroke-width="2"
-              stroke-linecap="round"
-            />
-          </svg>
-          <p>متابعة التقارير الخاصة بالموظفين</p>
-        </span>
-        <router-link to="/Contact">
-          <button
-            data-v-2645c328=""
-            style="margin-top: 40px; padding: 12px 10px"
-          >
-            أبدا نسختك التجريبة الان
-          </button>
-        </router-link>
-      </div>
-      <div
-        class="col-sm-6 animate__animated animate__fadeInLeft"
-        data-il8n="task"
-      >
-        <img :src="imageUrl" alt="" style="width: 90%; height: auto" />
+          <img :src="imageUrl" alt="" style="width: 100%; height: auto" />
+        </div>
       </div>
     </div>
 
@@ -108,7 +104,7 @@
           </p>
         </div>
       </div>
-      <div class="hidden-section">
+      <div class="now hidden-section">
         <h1>
           حسّن مستويات الأداء في إدارتك
           <a href="" style="color: #df8317">
@@ -130,7 +126,7 @@
             </svg>
           </a>
         </h1>
-        <p style="color: #696984; padding-top: 20px; padding: 0 460px">
+        <p style="color: #696984">
           نساعد الشركات على إدارة أعمالها بفعالية وتقديم تجربة مميزة لجميع
           عملائنا عبر برنامجنا الأفضل والأكثر سهولة في الاستخدام.
         </p>
@@ -251,27 +247,14 @@
         </div>
       </div>
 
-      <div class="row hidden-section" style="margin-top: 6%">
+      <div
+        class="row work hidden-section d-flex align-items-center"
+        style="margin-top: 6%"
+      >
         <div class="col-sm-6" style="margin-top: 60px">
           <p style="color: #df8317; text-align: right">إدارة قطاع العمل</p>
-          <h1
-            style="
-              color: #111c55;
-              text-align: right;
-              font-size: 46px;
-              margin-top: 0;
-            "
-          >
-            إدارة قطاع العمل لفريق فعّال
-          </h1>
-          <p
-            style="
-              color: #493f87;
-              font-size: 30px;
-              text-align: right;
-              margin-top: 30px;
-            "
-          >
+          <h1>إدارة قطاع العمل لفريق فعّال</h1>
+          <p class="span">
             <svg
               width="25"
               height="25"
@@ -294,7 +277,7 @@
             </svg>
             متابعة مهام فريق العمل يوميا
           </p>
-          <p style="color: #493f87; font-size: 30px; text-align: right">
+          <p class="span">
             <svg
               width="25"
               height="25"
@@ -317,7 +300,7 @@
             </svg>
             بيانات موظفيك محدّثة عبر الإشعارات.
           </p>
-          <p style="color: #493f87; font-size: 30px; text-align: right">
+          <p class="span">
             <svg
               width="25"
               height="25"
@@ -354,31 +337,14 @@
           <img :src="imageUrl3" alt="" style="width: 86%" />
         </div>
       </div>
-      <div class="row hidden-section">
+      <div class="row work hidden-section d-flex align-items-center">
         <div class="col-sm-6">
           <img :src="imageUrl2" alt="" style="width: 86%" />
         </div>
-
-        <div class="col-sm-6" style="margin-top: 140px">
+        <div class="col-sm-6" style="margin-top: 60px">
           <p style="color: #df8317; text-align: right">إدارة المستندات</p>
-          <h1
-            style="
-              color: #111c55;
-              text-align: right;
-              font-size: 46px;
-              margin-top: 0;
-            "
-          >
-            قم بإدارة المستندات بكفاءة
-          </h1>
-          <p
-            style="
-              color: #493f87;
-              font-size: 30px;
-              text-align: right;
-              margin-top: 30px;
-            "
-          >
+          <h1>قم بإدارة المستندات بكفاءة</h1>
+          <p class="span">
             <svg
               width="25"
               height="25"
@@ -401,7 +367,7 @@
             </svg>
             جميع المستندات في مكان واحد
           </p>
-          <p style="color: #493f87; font-size: 30px; text-align: right">
+          <p class="span">
             <svg
               width="25"
               height="25"
@@ -424,7 +390,7 @@
             </svg>
             التحكم في رؤية ملفات الموظفين والشركة.
           </p>
-          <p style="color: #493f87; font-size: 30px; text-align: right">
+          <p class="span">
             <svg
               width="25"
               height="25"
@@ -455,29 +421,13 @@
         </div>
       </div>
 
-      <div class="row hidden-section">
+      <div class="row work hidden-section d-flex align-items-center">
         <div class="col-sm-6" style="margin-top: 60px">
           <p style="color: #df8317; text-align: right">
             إدارة الحضور والانصراف
           </p>
-          <h1
-            style="
-              color: #111c55;
-              text-align: right;
-              font-size: 46px;
-              margin-top: 0;
-            "
-          >
-            متابعة لبيانات الحضور والانصراف
-          </h1>
-          <p
-            style="
-              color: #493f87;
-              font-size: 30px;
-              text-align: right;
-              margin-top: 30px;
-            "
-          >
+          <h1>متابعة لبيانات الحضور والانصراف</h1>
+          <p class="span">
             <svg
               width="25"
               height="25"
@@ -500,7 +450,7 @@
             </svg>
             الحصول على تقارير الموظفين الشهرية
           </p>
-          <p style="color: #493f87; font-size: 30px; text-align: right">
+          <p class="span">
             <svg
               width="25"
               height="25"
@@ -523,7 +473,7 @@
             </svg>
             مراجعة الجداول الزمنية والورديات
           </p>
-          <p style="color: #493f87; font-size: 30px; text-align: right">
+          <p class="span">
             <svg
               width="25"
               height="25"
@@ -574,31 +524,18 @@
           <img :src="imageUrl5" alt="" style="width: 100%" />
         </div>
       </div>
-      <div class="row hidden-section" style="margin-top: 40px">
+      <div
+        class="row work hidden-section d-flex align-items-center"
+        style="margin-top: 40px"
+      >
         <div class="col-sm-6">
           <img :src="imageUrl4" alt="" style="width: 85%" />
         </div>
 
         <div class="col-sm-6" style="margin-top: 60px">
           <p style="color: #df8317; text-align: right">إدارة التوظيف</p>
-          <h1
-            style="
-              color: #111c55;
-              text-align: right;
-              font-size: 46px;
-              margin-top: 0;
-            "
-          >
-            عمليات التوظيف أصبحت أسهل
-          </h1>
-          <p
-            style="
-              color: #493f87;
-              font-size: 30px;
-              text-align: right;
-              margin-top: 30px;
-            "
-          >
+          <h1>عمليات التوظيف أصبحت أسهل</h1>
+          <p class="span">
             <svg
               width="25"
               height="25"
@@ -621,7 +558,7 @@
             </svg>
             اختر الخيار الفردي أو الجماعي لتبسيط عملية التوظيف.
           </p>
-          <p style="color: #493f87; font-size: 30px; text-align: right">
+          <p class="span">
             <svg
               width="25"
               height="25"
@@ -644,7 +581,7 @@
             </svg>
             جدولة عمليات التوظيف و الاجتماعات
           </p>
-          <p style="color: #493f87; font-size: 30px; text-align: right">
+          <p class="span">
             <svg
               width="25"
               height="25"
@@ -758,15 +695,17 @@ export default {
   width: 100%;
 }
 .header {
-  padding: 40px 120px;
   text-align: right;
   background-image: url('/src//assets/Header\ bg.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
-  top: 14;
-  padding-top: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: right;
+  padding: 40px 0;
   height: calc(100vh -14vh);
 }
 .header h1 {
@@ -802,12 +741,32 @@ button {
   width: 24px;
   margin-top: 4%;
 }
+@media (max-width: 480px) {
+  .header {
+    height: auto;
+    padding: 30px;
+  }
+
+  .header h1 {
+    font-size: 20px;
+  }
+
+  .header p,
+  .header .text {
+    font-size: 14px;
+  }
+
+  button {
+    padding: 8px 30px;
+    font-size: 14px;
+    margin-bottom: 30px;
+  }
+}
+
 .join {
   background-color: #fbfdff;
 }
-.join h1 {
-  margin-top: 80px;
-}
+
 .join p {
   color: #696984;
   font-size: 20px;
@@ -818,7 +777,16 @@ button {
 .join .row {
   padding: 0 80px;
 }
-
+@media (max-width: 480px) {
+  .now h1 {
+    font-size: 20px;
+    padding: 0 30px;
+  }
+  .now p {
+    font-size: 14px;
+    padding: 0 30px;
+  }
+}
 .center-content {
   display: flex;
   flex-direction: column;
@@ -827,14 +795,69 @@ button {
   margin-top: 40px;
 }
 
+@media (max-width: 480px) {
+  .data h3 {
+    font-size: 20px;
+    padding: 0;
+  }
+  .data p {
+    font-size: 14px;
+    padding: 0;
+  }
+}
+.work {
+  margin-bottom: 60px;
+}
+.work p,
+.work h1 {
+  text-align: right;
+}
+
+.work p svg {
+  margin-left: 10px;
+  vertical-align: middle;
+}
+
+.work h1 {
+  font-size: 2.3rem;
+  font-weight: bold;
+  color: #111c55;
+  margin-bottom: 5%;
+}
+
+@media (max-width: 768px) {
+  .work {
+    grid-template-columns: 1fr;
+    padding: 0 30px 0 0;
+  }
+  .work p {
+    width: 140%;
+  }
+  .work .span,
+  .work h1 {
+    font-size: 1rem;
+    margin-top: 0;
+  }
+  .work svg {
+    height: 15px;
+    width: 15px;
+  }
+  .work .span {
+    margin-right: -30px;
+    padding: 0 30px 0 0;
+  }
+  .work h1 {
+    font-size: 1.4rem;
+  }
+}
+
 .All {
   align-items: center;
-  padding: 0 180px;
 }
 .All h1 {
   text-align: center;
   font-weight: bold;
-  margin-top: 0;
+  color: #111c55;
 }
 
 .All p {
@@ -844,12 +867,26 @@ button {
   margin-top: 20px;
 }
 .All .button {
-  text-align: center;
-  margin-right: 26%;
-  padding-bottom: 40px;
-  width: 60%;
   display: flex;
+  justify-content: center;
+  text-align: center;
+  padding-bottom: 40px;
   height: 120px;
+}
+@media (max-width: 600px) {
+  .All h1 {
+    font-size: 1.2rem;
+    padding: 0 20px;
+  }
+
+  .All p {
+    font-size: 0.9rem;
+  }
+
+  .All button {
+    font-size: 0.9rem;
+    padding: 8px 16px; /* حجم التباعد الداخلي للأزرار على الشاشات الصغيرة */
+  }
 }
 .text-slider-container {
   width: 100%;
@@ -857,6 +894,7 @@ button {
   color: #ffff;
   overflow: hidden;
   background-color: #111c55;
+  margin-bottom: 80px;
 }
 
 .text-slider {

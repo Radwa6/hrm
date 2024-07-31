@@ -1,113 +1,109 @@
 <template>
-  <div
-    class="TeamManagement"
-    dir="rtl"
-    data-aos-easing="ease-in-out"
-    data-aos-duration="1000"
-    data-aos-delay="0"
-  >
-    <div class="header row">
-      <div
-        class="col-sm-6 animate__animated animate__fadeInDown"
-        data-il8n="task"
-      >
-        <p style="color: #df8317">إدارة فريق العمل</p>
-        <h1>تهيئة بيئة العمل لفريق فعّال</h1>
-        <span
-          ><svg
-            width="25"
-            height="25"
-            viewBox="0 0 25 25"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M12.1056 21.3513C14.1878 21.3513 16.2055 20.6293 17.8151 19.3084C19.4246 17.9874 20.5264 16.1493 20.9326 14.1071C21.3388 12.0649 21.0243 9.94501 20.0427 8.10869C19.0612 6.27236 17.4733 4.83319 15.5496 4.03638C13.6259 3.23957 11.4854 3.13443 9.49286 3.73888C7.50033 4.34332 5.77902 5.61995 4.62222 7.35124C3.46543 9.08253 2.94472 11.1614 3.14883 13.2335C3.35293 15.3057 4.26922 17.243 5.74156 18.7153"
-              stroke="#DF8317"
-              stroke-width="2"
-              stroke-linecap="round"
-            />
-            <path
-              d="M16.1055 10.3513L12.5075 14.6693C11.8525 15.4553 11.5245 15.8493 11.0835 15.8693C10.6435 15.8893 10.2805 15.5263 9.55647 14.8023L8.10547 13.3513"
-              stroke="#DF8317"
-              stroke-width="2"
-              stroke-linecap="round"
-            />
-          </svg>
-          <p>متابعة مهام فريق العمل يوميا</p></span
+  <div class="TeamManagement" dir="rtl">
+    <div class="header">
+      <div class="row d-flex align-items-center">
+        <div
+          class="col-sm-6 animate__animated animate__fadeInDown"
+          data-il8n="task"
         >
-        <span
-          ><svg
-            width="25"
-            height="25"
-            viewBox="0 0 25 25"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M12.1056 21.3513C14.1878 21.3513 16.2055 20.6293 17.8151 19.3084C19.4246 17.9874 20.5264 16.1493 20.9326 14.1071C21.3388 12.0649 21.0243 9.94501 20.0427 8.10869C19.0612 6.27236 17.4733 4.83319 15.5496 4.03638C13.6259 3.23957 11.4854 3.13443 9.49286 3.73888C7.50033 4.34332 5.77902 5.61995 4.62222 7.35124C3.46543 9.08253 2.94472 11.1614 3.14883 13.2335C3.35293 15.3057 4.26922 17.243 5.74156 18.7153"
-              stroke="#DF8317"
-              stroke-width="2"
-              stroke-linecap="round"
-            />
-            <path
-              d="M16.1055 10.3513L12.5075 14.6693C11.8525 15.4553 11.5245 15.8493 11.0835 15.8693C10.6435 15.8893 10.2805 15.5263 9.55647 14.8023L8.10547 13.3513"
-              stroke="#DF8317"
-              stroke-width="2"
-              stroke-linecap="round"
-            />
-          </svg>
-          <p>متابعة مهام فريق العمل يوميا</p></span
-        >
-        <span
-          ><svg
-            width="25"
-            height="25"
-            viewBox="0 0 25 25"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M12.1056 21.3513C14.1878 21.3513 16.2055 20.6293 17.8151 19.3084C19.4246 17.9874 20.5264 16.1493 20.9326 14.1071C21.3388 12.0649 21.0243 9.94501 20.0427 8.10869C19.0612 6.27236 17.4733 4.83319 15.5496 4.03638C13.6259 3.23957 11.4854 3.13443 9.49286 3.73888C7.50033 4.34332 5.77902 5.61995 4.62222 7.35124C3.46543 9.08253 2.94472 11.1614 3.14883 13.2335C3.35293 15.3057 4.26922 17.243 5.74156 18.7153"
-              stroke="#DF8317"
-              stroke-width="2"
-              stroke-linecap="round"
-            />
-            <path
-              d="M16.1055 10.3513L12.5075 14.6693C11.8525 15.4553 11.5245 15.8493 11.0835 15.8693C10.6435 15.8893 10.2805 15.5263 9.55647 14.8023L8.10547 13.3513"
-              stroke="#DF8317"
-              stroke-width="2"
-              stroke-linecap="round"
-            />
-          </svg>
-          <p>متابعة مهام فريق العمل يوميا</p>
-        </span>
-        <router-link to="/Contact">
-          <button
-            data-v-2645c328=""
-            style="margin-top: 40px; padding: 12px 10px"
-          >
-            أحصل عل عرض تجريبي
-            <svg
-              width="10"
-              height="15"
-              viewBox="0 0 10 15"
+          <p style="color: #df8317">إدارة فريق العمل</p>
+          <h1>تهيئة بيئة العمل لفريق فعّال</h1>
+          <span
+            ><svg
+              width="25"
+              height="25"
+              viewBox="0 0 25 25"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
-                d="M2.52795 3.28634L1.60542 7.43987C1.5849 7.5501 1.54378 7.65119 1.48451 7.73711C1.42525 7.82304 1.34906 7.89203 1.26048 7.93999C1.1719 7.98795 1.07276 8.01388 0.968958 8.01624C0.865158 8.0186 0.758829 7.99734 0.656316 7.95373C0.553803 7.91012 0.457204 7.84505 0.372285 7.76241C0.287366 7.67977 0.215864 7.58124 0.162045 7.4727C0.108227 7.36417 0.0731927 7.24785 0.0590357 7.1307C0.0448782 7.01354 0.0518867 6.89794 0.0796428 6.79079L1.43631 0.682652C1.4841 0.468099 1.61022 0.296532 1.78697 0.205634C1.96372 0.114737 2.17663 0.111942 2.37896 0.197866L8.1366 2.64724C8.2399 2.68698 8.33801 2.74852 8.42508 2.82819C8.51214 2.90785 8.58638 3.00401 8.64336 3.11091C8.70034 3.21782 8.73889 3.33329 8.75672 3.45044C8.77455 3.56759 8.77129 3.68401 8.74713 3.79277C8.72298 3.90152 8.67842 4.00038 8.61613 4.08344C8.55383 4.1665 8.47507 4.23206 8.38453 4.27621C8.294 4.32037 8.19356 4.34221 8.08919 4.34044C7.98483 4.33867 7.87868 4.31331 7.77708 4.26589L3.86189 2.60032L9.19257 12.9656C9.302 13.1784 9.33667 13.4186 9.28897 13.6334C9.24126 13.8481 9.11509 14.0199 8.9382 14.1109C8.76131 14.2019 8.54819 14.2046 8.34573 14.1184C8.14328 14.0323 7.96806 13.8644 7.85864 13.6516L2.52795 3.28634Z"
-                fill="white"
+                d="M12.1056 21.3513C14.1878 21.3513 16.2055 20.6293 17.8151 19.3084C19.4246 17.9874 20.5264 16.1493 20.9326 14.1071C21.3388 12.0649 21.0243 9.94501 20.0427 8.10869C19.0612 6.27236 17.4733 4.83319 15.5496 4.03638C13.6259 3.23957 11.4854 3.13443 9.49286 3.73888C7.50033 4.34332 5.77902 5.61995 4.62222 7.35124C3.46543 9.08253 2.94472 11.1614 3.14883 13.2335C3.35293 15.3057 4.26922 17.243 5.74156 18.7153"
+                stroke="#DF8317"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+              <path
+                d="M16.1055 10.3513L12.5075 14.6693C11.8525 15.4553 11.5245 15.8493 11.0835 15.8693C10.6435 15.8893 10.2805 15.5263 9.55647 14.8023L8.10547 13.3513"
+                stroke="#DF8317"
+                stroke-width="2"
+                stroke-linecap="round"
               />
             </svg>
-          </button>
-        </router-link>
-      </div>
-      <div
-        class="col-sm-6 animate__animated animate__fadeInLeft"
-        data-il8n="task"
-      >
-        <img :src="imageUrl" alt="" style="width: 90%; height: auto" />
+            <p>متابعة مهام فريق العمل يوميا</p></span
+          >
+          <span
+            ><svg
+              width="25"
+              height="25"
+              viewBox="0 0 25 25"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12.1056 21.3513C14.1878 21.3513 16.2055 20.6293 17.8151 19.3084C19.4246 17.9874 20.5264 16.1493 20.9326 14.1071C21.3388 12.0649 21.0243 9.94501 20.0427 8.10869C19.0612 6.27236 17.4733 4.83319 15.5496 4.03638C13.6259 3.23957 11.4854 3.13443 9.49286 3.73888C7.50033 4.34332 5.77902 5.61995 4.62222 7.35124C3.46543 9.08253 2.94472 11.1614 3.14883 13.2335C3.35293 15.3057 4.26922 17.243 5.74156 18.7153"
+                stroke="#DF8317"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+              <path
+                d="M16.1055 10.3513L12.5075 14.6693C11.8525 15.4553 11.5245 15.8493 11.0835 15.8693C10.6435 15.8893 10.2805 15.5263 9.55647 14.8023L8.10547 13.3513"
+                stroke="#DF8317"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+            </svg>
+            <p>متابعة مهام فريق العمل يوميا</p></span
+          >
+          <span
+            ><svg
+              width="25"
+              height="25"
+              viewBox="0 0 25 25"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12.1056 21.3513C14.1878 21.3513 16.2055 20.6293 17.8151 19.3084C19.4246 17.9874 20.5264 16.1493 20.9326 14.1071C21.3388 12.0649 21.0243 9.94501 20.0427 8.10869C19.0612 6.27236 17.4733 4.83319 15.5496 4.03638C13.6259 3.23957 11.4854 3.13443 9.49286 3.73888C7.50033 4.34332 5.77902 5.61995 4.62222 7.35124C3.46543 9.08253 2.94472 11.1614 3.14883 13.2335C3.35293 15.3057 4.26922 17.243 5.74156 18.7153"
+                stroke="#DF8317"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+              <path
+                d="M16.1055 10.3513L12.5075 14.6693C11.8525 15.4553 11.5245 15.8493 11.0835 15.8693C10.6435 15.8893 10.2805 15.5263 9.55647 14.8023L8.10547 13.3513"
+                stroke="#DF8317"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+            </svg>
+            <p>متابعة مهام فريق العمل يوميا</p>
+          </span>
+          <router-link to="/Contact">
+            <button
+              data-v-2645c328=""
+              style="margin-top: 40px; padding: 12px 10px"
+            >
+              أحصل عل عرض تجريبي
+              <svg
+                width="10"
+                height="15"
+                viewBox="0 0 10 15"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M2.52795 3.28634L1.60542 7.43987C1.5849 7.5501 1.54378 7.65119 1.48451 7.73711C1.42525 7.82304 1.34906 7.89203 1.26048 7.93999C1.1719 7.98795 1.07276 8.01388 0.968958 8.01624C0.865158 8.0186 0.758829 7.99734 0.656316 7.95373C0.553803 7.91012 0.457204 7.84505 0.372285 7.76241C0.287366 7.67977 0.215864 7.58124 0.162045 7.4727C0.108227 7.36417 0.0731927 7.24785 0.0590357 7.1307C0.0448782 7.01354 0.0518867 6.89794 0.0796428 6.79079L1.43631 0.682652C1.4841 0.468099 1.61022 0.296532 1.78697 0.205634C1.96372 0.114737 2.17663 0.111942 2.37896 0.197866L8.1366 2.64724C8.2399 2.68698 8.33801 2.74852 8.42508 2.82819C8.51214 2.90785 8.58638 3.00401 8.64336 3.11091C8.70034 3.21782 8.73889 3.33329 8.75672 3.45044C8.77455 3.56759 8.77129 3.68401 8.74713 3.79277C8.72298 3.90152 8.67842 4.00038 8.61613 4.08344C8.55383 4.1665 8.47507 4.23206 8.38453 4.27621C8.294 4.32037 8.19356 4.34221 8.08919 4.34044C7.98483 4.33867 7.87868 4.31331 7.77708 4.26589L3.86189 2.60032L9.19257 12.9656C9.302 13.1784 9.33667 13.4186 9.28897 13.6334C9.24126 13.8481 9.11509 14.0199 8.9382 14.1109C8.76131 14.2019 8.54819 14.2046 8.34573 14.1184C8.14328 14.0323 7.96806 13.8644 7.85864 13.6516L2.52795 3.28634Z"
+                  fill="white"
+                />
+              </svg>
+            </button>
+          </router-link>
+        </div>
+        <div
+          class="col-sm-6 animate__animated animate__fadeInLeft"
+          data-il8n="task"
+        >
+          <img :src="imageUrl" alt="" style="width: 100%; height: auto" />
+        </div>
       </div>
     </div>
 
@@ -121,7 +117,7 @@
         </div>
       </div>
 
-      <div class="animate hidden-section" style="padding: 0 140px">
+      <div class="animate hidden-section">
         <h1>
           ارفع نسب الإنجاز في إدارتك
           <a href="" style="color: #df8317">
@@ -142,7 +138,7 @@
             </svg>
           </a>
         </h1>
-        <p style="color: #696984; padding-top: 20px; padding: 0 260px">
+        <p style="color: #696984">
           نعمل على تمكين الشركات من إدارة أعمالها باحترافية وتقديم أفضل تجربة
           أعمال لجميع عملاءنا من خلال برنامجنا الأفضل والأسهل استخداماً
         </p>
@@ -389,31 +385,18 @@
         </div>
       </div>
 
-      <div class="row hidden-section" style="margin-top: 6%">
+      <div
+        class="row work hidden-section d-flex align-items-center"
+        style="margin-top: 6%"
+      >
         <div class="col-sm-6">
-          <img :src="imageUrl2" alt="" style="width: 86%" />
+          <img :src="imageUrl2" alt="" style="width: 100%" />
         </div>
 
         <div class="col-sm-6" style="margin-top: 60px">
           <p style="color: #df8317; text-align: right">إدارة الموظفين</p>
-          <h1
-            style="
-              color: #111c55;
-              text-align: right;
-              font-size: 46px;
-              margin-top: 0;
-            "
-          >
-            ميزات مصممة خصيصًا لموظفيك
-          </h1>
-          <p
-            style="
-              color: #493f87;
-              font-size: 30px;
-              text-align: right;
-              margin-top: 30px;
-            "
-          >
+          <h1>ميزات مصممة خصيصًا لموظفيك</h1>
+          <p class="span">
             <svg
               width="25"
               height="25"
@@ -436,7 +419,7 @@
             </svg>
             تتبع تقدم الموظف العملي بسهولة
           </p>
-          <p style="color: #493f87; font-size: 30px; text-align: right">
+          <p class="span">
             <svg
               width="25"
               height="25"
@@ -459,7 +442,7 @@
             </svg>
             متابعة احصائيات الموظفين
           </p>
-          <p style="color: #493f87; font-size: 30px; text-align: right">
+          <p class="span">
             <svg
               width="25"
               height="25"
@@ -490,27 +473,11 @@
         </div>
       </div>
 
-      <div class="row hidden-section">
+      <div class="row work hidden-section d-flex align-items-center">
         <div class="col-sm-6" style="margin-top: 60px">
           <p style="color: #df8317; text-align: right">إدارة فريق العمل</p>
-          <h1
-            style="
-              color: #111c55;
-              text-align: right;
-              font-size: 46px;
-              margin-top: 0;
-            "
-          >
-            إتاحة التواصل مع فريقك دون عناء
-          </h1>
-          <p
-            style="
-              color: #493f87;
-              font-size: 30px;
-              text-align: right;
-              margin-top: 30px;
-            "
-          >
+          <h1>إتاحة التواصل مع فريقك دون عناء</h1>
+          <p class="span">
             <svg
               width="25"
               height="25"
@@ -533,7 +500,7 @@
             </svg>
             تحسين سبل التواصل بين الفريق العمل
           </p>
-          <p style="color: #493f87; font-size: 30px; text-align: right">
+          <p class="span">
             <svg
               width="25"
               height="25"
@@ -556,7 +523,7 @@
             </svg>
             تقييم أداء الموظفين بشكل دوري
           </p>
-          <p style="color: #493f87; font-size: 30px; text-align: right">
+          <p class="span">
             <svg
               width="25"
               height="25"
@@ -603,37 +570,21 @@
         </div>
 
         <div class="col-sm-6">
-          <img :src="imageUrl3" alt="" style="width: 86%" />
+          <img :src="imageUrl3" alt="" style="width: 100%" />
         </div>
       </div>
 
-      <div class="row hidden-section">
+      <div class="row work hidden-section d-flex align-items-center">
         <div class="col-sm-6">
-          <img :src="imageUrl4" alt="" style="width: 86%" />
+          <img :src="imageUrl4" alt="" style="width: 100%" />
         </div>
 
         <div class="col-sm-6" style="margin-top: 60px">
           <p style="color: #df8317; text-align: right">
             إدارة المالية والحسابات
           </p>
-          <h1
-            style="
-              color: #111c55;
-              text-align: right;
-              font-size: 46px;
-              margin-top: 0;
-            "
-          >
-            الرواتب والالتزامات المالية
-          </h1>
-          <p
-            style="
-              color: #493f87;
-              font-size: 30px;
-              text-align: right;
-              margin-top: 30px;
-            "
-          >
+          <h1>الرواتب والالتزامات المالية</h1>
+          <p class="span">
             <svg
               width="25"
               height="25"
@@ -656,7 +607,7 @@
             </svg>
             عرض تفصيلي للرواتب والمستحقات المالية
           </p>
-          <p style="color: #493f87; font-size: 30px; text-align: right">
+          <p class="span">
             <svg
               width="25"
               height="25"
@@ -679,7 +630,7 @@
             </svg>
             إصدار كشف رواتب بفترات مختلفة
           </p>
-          <p style="color: #493f87; font-size: 30px; text-align: right">
+          <p class="span">
             <svg
               width="25"
               height="25"
@@ -713,27 +664,11 @@
         </div>
       </div>
 
-      <div class="row hidden-section">
+      <div class="row work hidden-section d-flex align-items-center">
         <div class="col-sm-6" style="margin-top: 60px">
           <p style="color: #df8317; text-align: right">إدارة بيانات الموظفين</p>
-          <h1
-            style="
-              color: #111c55;
-              text-align: right;
-              font-size: 46px;
-              margin-top: 0;
-            "
-          >
-            نظام متطور لإدارة الموظفين
-          </h1>
-          <p
-            style="
-              color: #493f87;
-              font-size: 30px;
-              text-align: right;
-              margin-top: 30px;
-            "
-          >
+          <h1>نظام متطور لإدارة الموظفين</h1>
+          <p class="span">
             <svg
               width="25"
               height="25"
@@ -756,7 +691,7 @@
             </svg>
             تتبع تقدم الموظف العملي بسهولة
           </p>
-          <p style="color: #493f87; font-size: 30px; text-align: right">
+          <p class="span">
             <svg
               width="25"
               height="25"
@@ -779,7 +714,7 @@
             </svg>
             متابعة بيانات الموظفين بشكل دوري
           </p>
-          <p style="color: #493f87; font-size: 30px; text-align: right">
+          <p class="span">
             <svg
               width="25"
               height="25"
@@ -826,7 +761,7 @@
         </div>
 
         <div class="col-sm-6">
-          <img :src="imageUrl5" alt="" style="width: 86%" />
+          <img :src="imageUrl5" alt="" style="width: 100%" />
         </div>
       </div>
 
@@ -909,15 +844,17 @@ a {
   width: 100%;
 }
 .header {
-  padding: 40px 120px;
   text-align: right;
   background-image: url('/src//assets/Header\ bg.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
-  top: 14;
-  padding-top: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: right;
+  padding: 40px 0;
   height: calc(100vh -14vh);
 }
 a:hover {
@@ -953,16 +890,34 @@ button {
   width: 24px;
   margin-top: 4%;
 }
+@media (max-width: 480px) {
+  .header {
+    height: auto;
+    padding: 30px;
+  }
+
+  .header h1 {
+    font-size: 20px;
+  }
+
+  .header p,
+  .header .text {
+    font-size: 14px;
+  }
+
+  button {
+    padding: 8px 30px;
+    font-size: 14px;
+    margin-bottom: 30px;
+  }
+}
 .join {
   background-color: #fbfdff;
 }
-.join h1 {
-  margin-top: 80px;
-}
+
 .join p {
   color: #696984;
   font-size: 20px;
-  margin-bottom: 40px;
 }
 .join svg {
   width: 50px;
@@ -970,15 +925,23 @@ button {
 .join .row {
   padding: 0 80px;
 }
+
 .data {
   height: 280px;
-  margin-top: 40px;
+  margin: 20px 0;
   padding: 40px;
   background-color: #ffff;
   border: 1px solid rgba(184, 184, 184, 0.192);
   box-shadow: 8px 8px 8px rgba(184, 184, 184, 0.192);
   text-align: right;
   border-radius: 10px;
+}
+.animate h1 {
+  font-weight: bold;
+  color: #111c55;
+}
+.animate p {
+  margin-bottom: 60px;
 }
 .animate .col-sm-3 :hover {
   background-color: #111c55;
@@ -989,8 +952,12 @@ button {
 .animate .data:hover {
   box-shadow: 0px 4px 15px rgb(30, 28, 28);
   background-color: #111c55;
+  color: #ffff;
   padding: 38px;
   margin-top: 2px;
+}
+.animate .data:hover h1 {
+  color: #ffff;
 }
 .animate .col-sm-3 :hover h2,
 .animate .col-sm-3 :hover h3,
@@ -1004,6 +971,25 @@ button {
 .animate .col-sm-3 :hover .path {
   fill: #ffff;
 }
+@media (max-width: 480px) {
+  .animate h1 {
+    font-size: 20px;
+    padding: 0 30px;
+  }
+  .animate p {
+    font-size: 14px;
+    padding: 0 30px;
+  }
+  .animate .data h1 {
+    font-size: 20px;
+    padding: 0;
+  }
+  .animate .data p {
+    font-size: 14px;
+    padding: 0;
+  }
+}
+
 .data h1 {
   font-size: 22px;
   margin-top: 6%;
@@ -1012,14 +998,60 @@ button {
 .data p {
   font-size: 18px;
 }
+
+.work {
+  margin-bottom: 60px;
+}
+.work p,
+.work h1 {
+  text-align: right;
+}
+
+.work p svg {
+  margin-left: 10px;
+  vertical-align: middle;
+}
+
+.work h1 {
+  font-size: 2.3rem;
+  font-weight: bold;
+  color: #111c55;
+  margin-bottom: 5%;
+}
+
+@media (max-width: 768px) {
+  .work {
+    grid-template-columns: 1fr;
+    padding: 0 30px 0 0;
+  }
+  .work p {
+    width: 140%;
+  }
+  .work .span,
+  .work h1 {
+    font-size: 1rem;
+    margin-top: 0;
+  }
+  .work svg {
+    height: 15px;
+    width: 15px;
+  }
+  .work .span {
+    margin-right: -30px;
+    padding: 0 30px 0 0;
+  }
+  .work h1 {
+    font-size: 1.4rem;
+  }
+}
+
 .All {
   align-items: center;
-  padding: 0 180px;
 }
 .All h1 {
   text-align: center;
   font-weight: bold;
-  margin-top: 0;
+  color: #111c55;
 }
 
 .All p {
@@ -1029,18 +1061,33 @@ button {
   margin-top: 20px;
 }
 .All .button {
-  text-align: center;
-  margin-right: 26%;
-  padding-bottom: 40px;
-  width: 60%;
   display: flex;
+  justify-content: center;
+  text-align: center;
+  padding-bottom: 40px;
   height: 120px;
+}
+@media (max-width: 600px) {
+  .All h1 {
+    font-size: 1.2rem;
+    padding: 0 20px;
+  }
+
+  .All p {
+    font-size: 0.9rem;
+  }
+
+  .All button {
+    font-size: 0.9rem;
+    padding: 8px 16px; /* حجم التباعد الداخلي للأزرار على الشاشات الصغيرة */
+  }
 }
 
 .text-slider-container {
   width: 100%;
   padding: 10px;
   color: #ffff;
+  margin-bottom: 80px;
   overflow: hidden;
   background-color: #111c55;
 }
@@ -1072,6 +1119,25 @@ button {
   }
   100% {
     transform: translateX(-100%); /* End at left */
+  }
+}
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+@media screen and (max-width: 768px) {
+  .scrolling-text {
+    font-size: 12px; /* حجم النص على الهواتف الذكية */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .scrolling-text {
+    font-size: 10px; /* حجم النص على الشاشات الأصغر */
   }
 }
 </style>

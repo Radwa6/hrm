@@ -50,7 +50,7 @@ export default {
         stretch: 100,
         depth: 300,
         modifier: 1,
-        slideShadows: true,
+        slideShadows: false,
       },
       initialSlide: 2,
       pagination: {
@@ -60,6 +60,16 @@ export default {
       navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
+      },
+      breakpoints: {
+        768: {
+          slidesPerView: 'auto',
+          centeredSlides: false,
+        },
+        480: {
+          slidesPerView: 'auto',
+          centeredSlides: true,
+        },
       },
     })
   },
@@ -73,6 +83,7 @@ export default {
   padding-top: 50px;
   padding-bottom: 50px;
   position: relative;
+  background-color: #f9fcff;
 }
 .swiper-slide {
   width: 400px;
@@ -80,10 +91,12 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #f9fcff;
 }
 .swiper-slide img {
   height: 60vh;
   object-fit: cover;
+  box-shadow: none;
 }
 .swiper-pagination {
   position: absolute;
@@ -91,34 +104,33 @@ export default {
   justify-content: center;
 }
 .swiper-pagination-bullet {
-  background: #000;
   width: 10px;
   height: 10px;
   border-radius: 50%;
-}
-.swiper-pagination-bullet-active {
-  background: #b2b2b2;
-}
-@media (max-width: 1200px) {
-  .meta-container {
-    max-width: 600px; /* ضبط الحجم للشاشات المتوسطة */
-  }
+  box-shadow: none;
 }
 
 @media (max-width: 768px) {
-  .meta-container {
-    max-width: 400px; /* ضبط الحجم للشاشات الصغيرة */
+  .swiper-slide img {
+    height: 40vh;
+  }
+  .swiper-slide,
+  .swiper-slide-prev {
+    height: 30vh;
   }
 }
 
 @media (max-width: 480px) {
-  .meta-container {
-    padding: 10px; /* تقليل الـ padding للشاشات الصغيرة جداً */
+  .swiper-slide img {
+    height: 30vh;
+    padding: 20px;
   }
-
-  .meta-container img {
-    object-fit: contain;
-    width: 20px;
+  .swiper-slide,
+  .swiper-slide-prev {
+    height: 30vh;
+  }
+  .swiper-container {
+    height: 40vh;
   }
 }
 </style>

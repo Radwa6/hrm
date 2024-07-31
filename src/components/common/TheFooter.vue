@@ -152,7 +152,7 @@ export default {
   font-family: Cairo;
   text-align: right;
   margin-top: 40px;
-  padding: 80px 140px 0 0;
+  padding: 80px;
   width: 100%;
   z-index: 0;
   background-position: center calc(10% - 30px);

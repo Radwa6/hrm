@@ -1,9 +1,9 @@
 <template>
   <div class="ThePage" dir="rtl">
     <section class="header">
-      <div class="row">
+      <div class="row d-flex align-items-center">
         <div
-          class="col-sm-6 container animate__animated animate__fadeInDown"
+          class="col-sm-6 animate__animated animate__fadeInDown"
           data-il8n="task"
         >
           <p>نظام إدارة الموارد البشرية</p>
@@ -217,8 +217,8 @@
       </div>
     </div>
 
-    <div class="us hidden-section" data-il8n="us" id="system-section">
-      <h1>
+    <div class="us hidden-section container" data-il8n="us" id="system-section">
+      <h1 class="container">
         ركز على الاستراتيجية
         <a href=""
           ><span>
@@ -334,7 +334,7 @@
         </div>
       </div>
 
-      <div class="row work hidden-section">
+      <div class="row work hidden-section d-flex align-items-center">
         <div class="col-sm-6">
           <img :src="imageUrl1" alt="" />
         </div>
@@ -418,7 +418,7 @@
           </router-link>
         </div>
       </div>
-      <div class="row work hidden-section">
+      <div class="row work hidden-section d-flex align-items-center">
         <div class="col-sm-6">
           <p style="color: #df8317; text-align: right">إدارة فريق العمل</p>
           <h1 style="text-align: right">تهيئة بيئة العمل لفريق فعّال</h1>
@@ -501,7 +501,7 @@
           <img :src="imageUrl2" alt="" />
         </div>
       </div>
-      <div class="row work hidden-section">
+      <div class="row work hidden-section d-flex align-items-center">
         <div class="col-sm-6">
           <img :src="imageUrl3" alt="" />
         </div>
@@ -603,7 +603,7 @@
           </router-link>
         </div>
       </div>
-      <div class="row work hidden-section">
+      <div class="row work hidden-section d-flex align-items-center">
         <div class="col-sm-6">
           <p style="color: #df8317; text-align: right">الخدمة الذاتية للموظف</p>
           <h1 style="text-align: right">إتاحة الخدمة الذاتية للموظفين</h1>
@@ -778,14 +778,11 @@ a:hover {
   align-items: center;
   justify-content: center;
   text-align: right;
-  padding: 20px;
 }
 .header .row {
-  display: flex;
-  flex-wrap: wrap;
   justify-content: center;
+  padding: 180px;
   align-items: center;
-  padding: 60px 20px 0;
 }
 
 .header h1 {
@@ -823,6 +820,10 @@ button:hover {
   .header {
     height: auto;
     padding: 10px;
+  }
+  .header .row {
+    justify-content: center;
+    padding: 40px;
   }
 
   .header h1 {
@@ -965,7 +966,7 @@ button:hover {
 }
 @media (max-width: 768px) {
   .container {
-    padding: 20px;
+    padding: 40px;
   }
   .us {
     padding: 30px 20px; /* تقليل الهوامش الداخلية على الشاشات الصغيرة */
@@ -1004,7 +1005,7 @@ button:hover {
     padding: 20px;
   }
   .join {
-    padding: 10px;
+    padding: 10px 40px;
   }
 
   .join h1 {
@@ -1149,9 +1150,14 @@ button:hover {
     font-size: 16px;
   }
 }
-
-.work p,
+.work {
+  margin-bottom: 40px;
+}
 .work h1 {
+  text-align: right;
+  margin-top: 2rem;
+}
+.work p {
   text-align: right;
   margin-top: 2rem;
 }
@@ -1171,7 +1177,9 @@ button:hover {
     grid-template-columns: 1fr;
     padding: 0 30px 0 0;
   }
-
+  .work p {
+    width: 140%;
+  }
   .work .span,
   .work h1 {
     font-size: 1rem;
@@ -1196,6 +1204,7 @@ button:hover {
 .All h1 {
   text-align: center;
   font-weight: bold;
+  color: #111c55;
 }
 
 .All p {
