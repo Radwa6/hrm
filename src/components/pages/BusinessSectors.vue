@@ -1,5 +1,5 @@
 <template>
-  <div class="TeamManagement justify-content-center" dir="rtl">
+  <div class="TeamManagement" dir="rtl">
     <div class="header">
       <div class="row d-flex align-items-center">
         <div
@@ -324,10 +324,7 @@
             توفير نتائج دقيقة لعملية دفع الرواتب.
           </p>
           <router-link to="/Contact">
-            <button
-              data-v-2645c328=""
-              style="margin-top: 40px; padding: 12px 28px"
-            >
+            <button style="margin-top: 40px; padding: 12px 28px">
               تواصل معانا
             </button>
           </router-link>
@@ -742,6 +739,7 @@ button {
   padding: 12px 48px;
   border-radius: 80px;
   border: none;
+  float: right;
   margin-top: 30px;
   box-shadow: 8px 8px 8px rgba(205, 205, 205, 0.409);
   transition: padding 0.3s, box-shadow 0.3s, font-size 0.3s;
@@ -937,6 +935,11 @@ button:hover {
   }
   100% {
     transform: translateX(-100%);
+  }
+}
+@media (max-width: 768px) {
+  .due {
+    transform: rotate(80deg);
   }
 }
 </style>

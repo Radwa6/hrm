@@ -927,13 +927,15 @@ button:hover {
     text-align: center;
   }
   .share {
-    width: 70%;
+    width: 40%;
     margin-bottom: 60px;
+    transform: rotate(90deg);
   }
   .sharee {
-    width: 70%;
+    width: 40%;
     margin-top: 0;
     margin-bottom: 60px;
+    transform: rotate(90deg);
   }
 }
 .svg {

@@ -119,7 +119,7 @@ export default {
   }
   .slide {
     width: 100px;
-    margin-right: 5px;
+    margin-right: 25px;
   }
   @keyframes scroll {
     0% {
