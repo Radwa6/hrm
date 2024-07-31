@@ -95,6 +95,7 @@ export default {
       imageUrl: require('@/assets/header_img.png'),
       imageUrl0: require('@/assets/WhatsApp_Image_2024-05-12_at_3.29 2.png'),
       email: '',
+      text: '',
     }
   },
   methods: {

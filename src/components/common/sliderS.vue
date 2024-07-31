@@ -57,20 +57,6 @@ export default {
         el: '.swiper-pagination',
         clickable: true,
       },
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-      breakpoints: {
-        768: {
-          slidesPerView: 'auto',
-          centeredSlides: false,
-        },
-        480: {
-          slidesPerView: 'auto',
-          centeredSlides: true,
-        },
-      },
     })
   },
 }

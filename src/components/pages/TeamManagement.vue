@@ -809,7 +809,6 @@ export default {
   data() {
     return {
       imageUrl: require('@/assets/Group 1261152755.png'),
-      imageUrl1: require('@/assets/Frame 2147223568.png'),
       imageUrl2: require('@/assets/Frame 2147223578.png'),
       imageUrl3: require('@/assets/Frame 2147223569.png'),
       imageUrl4: require('@/assets/Frame 2147223612.png'),
@@ -844,27 +843,22 @@ a {
   width: 100%;
 }
 .header {
-  text-align: right;
-  background-image: url('/src//assets/Header\ bg.jpg');
+  background-image: url('/src/assets/Header bg.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+
   text-align: right;
-  padding: 40px 0;
-  height: calc(100vh -14vh);
+}
+.header .row {
+  justify-content: center;
+  padding: 40px 180px;
+  align-items: center;
 }
 a:hover {
   text-decoration: none;
 }
-.header h1 {
-  color: #111c55;
-  font-weight: bold;
-  margin-bottom: 40px;
-}
+
 .header span {
   display: flex;
   align-items: right;
@@ -875,8 +869,23 @@ a:hover {
   font-size: 18px;
   color: #757095;
 }
+.header h1 {
+  font-weight: bold;
+  font-size: 32px;
+  color: #111c55;
+}
+
+.header p {
+  color: #df8317;
+  font-size: 20px;
+}
+
+.header .text {
+  color: #757095;
+  margin-top: 30px;
+}
+
 button {
-  display: flex;
   background-color: #111c55;
   color: #e5e7f2;
   padding: 12px 48px;
@@ -884,16 +893,21 @@ button {
   border: none;
   margin-top: 30px;
   box-shadow: 8px 8px 8px rgba(205, 205, 205, 0.409);
+  transition: padding 0.3s, box-shadow 0.3s, font-size 0.3s;
 }
-.header button svg {
-  background-color: none;
-  width: 24px;
-  margin-top: 4%;
+button:hover {
+  box-shadow: 8px 8px 8px rgba(49, 49, 49, 0.717);
+  padding: 14px 50px;
+  font-size: 20px;
 }
 @media (max-width: 480px) {
   .header {
     height: auto;
-    padding: 30px;
+    padding: 10px;
+  }
+  .header .row {
+    justify-content: center;
+    padding: 40px;
   }
 
   .header h1 {
@@ -908,9 +922,15 @@ button {
   button {
     padding: 8px 30px;
     font-size: 14px;
-    margin-bottom: 30px;
   }
 }
+
+.header button svg {
+  background-color: none;
+  width: 24px;
+  margin-top: 4%;
+}
+
 .join {
   background-color: #fbfdff;
 }
@@ -927,7 +947,7 @@ button {
 }
 
 .data {
-  height: 280px;
+  height: 80%;
   margin: 20px 0;
   padding: 40px;
   background-color: #ffff;
@@ -1079,7 +1099,7 @@ button {
 
   .All button {
     font-size: 0.9rem;
-    padding: 8px 16px; /* حجم التباعد الداخلي للأزرار على الشاشات الصغيرة */
+    padding: 8px 16px;
   }
 }
 
@@ -1115,10 +1135,10 @@ button {
 }
 @keyframes scroll {
   0% {
-    transform: translateX(100%); /* Start from right */
+    transform: translateX(100%);
   }
   100% {
-    transform: translateX(-100%); /* End at left */
+    transform: translateX(-100%);
   }
 }
 @keyframes marquee {
@@ -1131,13 +1151,13 @@ button {
 }
 @media screen and (max-width: 768px) {
   .scrolling-text {
-    font-size: 12px; /* حجم النص على الهواتف الذكية */
+    font-size: 12px;
   }
 }
 
 @media screen and (max-width: 480px) {
   .scrolling-text {
-    font-size: 10px; /* حجم النص على الشاشات الأصغر */
+    font-size: 10px;
   }
 }
 </style>

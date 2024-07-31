@@ -148,9 +148,14 @@ export default {
 #app {
   font-family: 'Poppins', sans-serif;
   width: 100%;
-  background-color: #fff;
+  background-image: url('/src/assets/Headeeer bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
-
+a:hover {
+  text-decoration: none;
+}
 ul,
 li {
   margin: 0;
@@ -162,7 +167,7 @@ a :hover {
   text-decoration: none;
 }
 .header-area {
-  padding: 10px 60px;
+  padding: 10px 60px 10px 100px;
 }
 .logo {
   width: 300px;
@@ -354,7 +359,7 @@ a :hover {
 
 .mobilebtn {
   display: none;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.472);
 }
 .navigation button {
   border: none;
@@ -367,9 +372,12 @@ a :hover {
     font-size: 20px;
     font-weight: 600;
   }
+  .header-area {
+    padding: 10px 40px;
+  }
   .mobilebtn {
     display: block;
-    background-color: white;
+    background-color: rgba(229, 228, 228, 0);
   }
   .menu-area {
     display: none;
@@ -497,6 +505,9 @@ a :hover {
 }
 
 @media (max-width: 991.98px) {
+  .header-area {
+    padding: 10px 40px;
+  }
   .mega-item {
     width: 50%;
   }
@@ -507,6 +518,9 @@ a :hover {
 }
 
 @media (max-width: 767.98px) {
+  .header-area {
+    padding: 10px 40px;
+  }
   .mega-item {
     width: 100%;
   }
@@ -536,7 +550,7 @@ a {
   z-index: -10;
 }
 
-.active-link {
+.active-link li {
   color: #df8317;
 }
 </style>

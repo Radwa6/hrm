@@ -104,12 +104,12 @@ export default {
 }
 @media (max-width: 768px) {
   .carousel-wrapper {
-    height: 100px; /* Adjust height for smaller screens */
+    height: 100px;
   }
 
   .slide {
-    width: 120px; /* Adjust width of each slide */
-    margin-right: 10px; /* Adjust spacing between slides */
+    width: 120px;
+    margin-right: 10px;
   }
 
   @keyframes scroll {
@@ -124,12 +124,12 @@ export default {
 
 @media (max-width: 480px) {
   .carousel-wrapper {
-    height: 80px; /* Adjust height for smaller screens */
+    height: 80px;
   }
 
   .slide {
-    width: 100px; /* Adjust width of each slide */
-    margin-right: 5px; /* Adjust spacing between slides */
+    width: 100px;
+    margin-right: 5px;
   }
 
   @keyframes scroll {
@@ -137,7 +137,7 @@ export default {
       transform: translateX(0);
     }
     100% {
-      transform: translateX(-70%); /* Adjust based on the width of the images */
+      transform: translateX(-70%);
     }
   }
 }
